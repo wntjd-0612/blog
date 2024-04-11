@@ -80,10 +80,10 @@ provider = "giscus"
 
 
 [comments.giscus]
-repo = "5-23/blog"
-repoID = "R_kgDOLgAyXw"
+repo = "wntjd-0612/blog"
+repoID = "R_kgDOLst0yQ"
 category = "General"
-categoryID = "DIC_kwDOLgAyX84Cd9HM"
+categoryID = "DIC_kwDOLst0yc4CenqH"
 
 lang = ""
 mapping = "pathname"
@@ -95,7 +95,7 @@ lightTheme = "light"
 darkTheme = "dark_dimmed"
 
 # <script src="https://giscus.app/client.js"
-#         data-repo="5-23/blog"
+#         data-repo="wntjd-0612/blog"
 #         data-repo-id="R_kgDOLgAyXw"
 #         data-category="[ENTER CATEGORY NAME HERE]"
 #         data-category-id="[ENTER CATEGORY ID HERE]"
