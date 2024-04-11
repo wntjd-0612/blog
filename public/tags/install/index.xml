@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Install on wntjd</title>
+        <link>http://localhost:1313/tags/install/</link>
+        <description>Recent content in Install on wntjd</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Thu, 11 Apr 2024 06:04:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/install/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>python이란?</title>
+        <link>http://localhost:1313/p/about_python/</link>
+        <pubDate>Thu, 11 Apr 2024 06:04:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/p/about_python/</guid>
+        <description>&lt;img src="http://localhost:1313/p/about_python/thumb.png" alt="Featured image of post python이란?" /&gt;&lt;h1 id=&#34;python이란&#34;&gt;python이란?&lt;/h1&gt;
+&lt;p&gt;암스테르담의 &lt;a class=&#34;link&#34; href=&#34;https://github.com/gvanrossum&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;귀도 반 로섬(Guido van rossum)&lt;/a&gt;이 개발한 인터프리터 언어&lt;/p&gt;
+&lt;h2 id=&#34;python-install&#34;&gt;python install&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;window&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;www.python.org/downloads&#34; &gt;여기서&lt;/a&gt; 설치를 한다&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Mac&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;이미 설치가 되어있다&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;python-특징&#34;&gt;python 특징&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;인터프리터 언어: 소스 코드를 한 줄씩 해석해서 실행결과를 바로 확인할 수 있는 언어&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;인터프리터 언어&lt;/th&gt;
+&lt;th&gt;컴파일 언어&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;용어 정의&lt;/td&gt;
+&lt;td&gt;소스코드를 한줄씩 해석해서 실행 결과를 바로 확인 할 수 있는 언어&lt;/td&gt;
+&lt;td&gt;코드가 실행 되기전, 기계어로 모두 번역하여 실행하는 언어&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;특징&lt;/td&gt;
+&lt;td&gt;한 줄씩 번역과 실행을 동시에 진행하므로 상대적으로 느림 &lt;br/&gt; 잘못된 명령을 수정하기 쉬움&lt;/td&gt;
+&lt;td&gt;소스 코드를 목적 코드로 번역하는 과정에서 시간이 소요됨 &lt;br/&gt; 런타임 상황에서는 빠르게 실행 가능&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;예시&lt;/td&gt;
+&lt;td&gt;Python, JavaScript&lt;/td&gt;
+&lt;td&gt;C, C++&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;동적 타입 언어&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;변수의 자료형을 지정하지 않고 선언만으로도 값 지정 가능 &lt;br/&gt;ex)
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-py&#34; data-lang=&#34;py&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;10&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;asdf&amp;#39;&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;#정수 자료형을 문자열로 바꿔도 오류가 나지 않는다.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;변수의 자료형은 코드가 시행되는 시점에 결정&lt;/li&gt;
+&lt;li&gt;프로그램이 복잡해질 경우 타입으로 인한 에러가 발생 할 수도 있음&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;객체 지향 언어&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;객체의 특징을 클래스로 구현&lt;/li&gt;
+&lt;li&gt;클래스로 구현된 프로그래밍을 다른 프로그래밍에 재사용 할 수 있다.&lt;/li&gt;
+&lt;li&gt;클래스는 캡슐화를 거치면 그 안의 코드를 몰라도 사용할 수 있다.&lt;/li&gt;
+&lt;li&gt;다향성이 적용되어 같은 객체를 가지고도 다양하게 사용될 수 있다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;쉽고 간결 =&amp;gt; &amp;lsquo;개발 속도&amp;rsquo;가 빠르다&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;Life is too short, You need Python&amp;rdquo;&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;높은 확장성과 이식성&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;대표적인 접착언어, 다른언어와 쉽게 결합이 가능하다.&lt;/li&gt;
+&lt;li&gt;수많은 라이브러리를 제공, 문제해결을 빠르게 해결하고 확장할 수 있음&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;python의-활용&#34;&gt;python의 활용&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;시스템 유틸리티 제작&lt;/code&gt;: 운영체제의 시스템 명령어를 사용할 수 있는 각종 도구를 갖추고 있다&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;GUI 프로그래밍&lt;/code&gt;: 파이썬은 GUI 프로그래밍을 위한 도구들이 잘 갖추어져 있기 때문에 GUI 프로그램을 쉽게 만들 수 있다.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;웹 프로그래밍&lt;/code&gt;: 파이썬은 웹 프로그램을 만들기에 매우 적합한 도구이며, 실제로 파이썬으로 제작한 웹 사이트는 셀 수 없을 정도로 많다.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;데이터베이스 프로그래밍&lt;/code&gt;: 파이썬은 사이베이스(Sybase), 인포믹스(Infomix), 오라클(Oracle), 마이에스큐엘(MySQL), 포스트그레스큐엘(PostgreSQL) 등의 데이터베이스에 접근하기 위한 도구를 제공한다.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;데이터 분석&lt;/code&gt;: 파이썬은 데이터 분석에 이상적인 언어로, 넘파이(NumPy), 판다스(Pandas), 맷플롯립(Matplotlib) 등과 같은 라이브러리들을 활용하여 데이터 처리, 통계 분석, 시각화를 손쉽게 수행할 수 있다.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;머신러닝 프로그래밍&lt;/code&gt;: 파이썬은 인공지능과 머신러닝 프로그래밍을 쉽게 할 수 있도록 사이킷런(scikit-learn), 텐서플로(TensorFlow), 파이토치(PyTorch), 케라스(Keras) 등과 같은 다양한 라이브러리를 제공한다.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;시스템 유틸리티 제작하기&lt;/code&gt;: 파이썬은 운영체제(윈도우, 리눅스 등)의 시스템 명령어를 사용할 수 있는 각종 도구를 갖추고 있다&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;엄청나게 빠른 파이썬의 개발 속도 때문에 유행처럼 퍼진 말이다.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
