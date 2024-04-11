@@ -6,10 +6,10 @@
         <description>Recent content in Basic on wntjd</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Thu, 11 Apr 2024 06:04:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/basic/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 11 Apr 2024 12:50:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/basic/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>python 기초문법1</title>
         <link>http://localhost:1313/p/simple_python1/</link>
-        <pubDate>Thu, 11 Apr 2024 06:04:00 +0000</pubDate>
+        <pubDate>Thu, 11 Apr 2024 12:50:00 +0000</pubDate>
         
         <guid>http://localhost:1313/p/simple_python1/</guid>
         <description>&lt;img src="http://localhost:1313/p/simple_python1/thumb.png" alt="Featured image of post python 기초문법1" /&gt;&lt;h1 id=&#34;python의-자료형&#34;&gt;python의 자료형&lt;/h1&gt;
@@ -78,8 +78,8 @@
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;4.24E10&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;4.24e-10&lt;/span&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;4.24E10&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;#4.24*10**10&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;4.24e-10&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;#4.24**(-10)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h3 id=&#34;8진수와-16진수&#34;&gt;8진수와 16진수&lt;/h3&gt;
@@ -112,7 +112,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;8진수나 16진수는 파이썬에서 잘 사용하지 않는 형태의 숫자 자료형이므로 간단히 눈으로만 익히고 넘어갑시다.&lt;/p&gt;
-&lt;h2 id=&#34;boll형&#34;&gt;boll형&lt;/h2&gt;
+&lt;h2 id=&#34;bool형&#34;&gt;bool형&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;참과 거짓을 나타내는 자료형, 프로그램의 실행 흐름을 제어 할때 사용&lt;/li&gt;
 &lt;li&gt;True(참),False(거짓)의 두 가지 값만 가질 수 있으며, 첫번째는 항상 대문자&lt;/li&gt;
