@@ -15,6 +15,14 @@
         <description></description>
         </item>
         <item>
+        <title>Basic</title>
+        <link>http://localhost:1313/tags/basic/</link>
+        <pubDate>Thu, 11 Apr 2024 06:04:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/tags/basic/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>Install</title>
         <link>http://localhost:1313/tags/install/</link>
         <pubDate>Thu, 11 Apr 2024 06:04:00 +0000</pubDate>

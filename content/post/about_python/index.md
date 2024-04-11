@@ -21,7 +21,7 @@ weight: 1
 ## python install
 
 - window
-  - [여기서](www.python.org/downloads) 설치를 한다
+  - [여기서](https://www.python.org/downloads/) 설치를 한다
 
 - Mac
   - 이미 설치가 되어있다

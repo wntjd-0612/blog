@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/p/simple_python1/</loc>
+    <lastmod>2024-04-11T06:04:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/p/about_python/</loc>
     <lastmod>2024-04-11T06:04:00+00:00</lastmod>
   </url><url>
@@ -12,6 +15,9 @@
     <lastmod>2024-04-11T06:04:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/ana/</loc>
+    <lastmod>2024-04-11T06:04:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/basic/</loc>
     <lastmod>2024-04-11T06:04:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
