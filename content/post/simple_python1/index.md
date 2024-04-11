@@ -2,7 +2,7 @@
 title: python 기초문법1
 description: python 기초문법-자료형
 slug: simple_python1
-date: 2024-04-11 06:04:00+0000
+date: 2024-04-12 12:01:00+0000
 image: thumb.png
 categories:
     - python
