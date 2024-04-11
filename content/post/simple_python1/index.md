@@ -2,7 +2,7 @@
 title: python 기초문법1
 description: python 기초문법-자료형
 slug: simple_python1
-date: 2024-04-12 12:01:00+0000
+date: 2024-04-12 00:01:00+0000
 image: thumb.png
 categories:
     - python
@@ -67,7 +67,7 @@ print(b)
 8진수나 16진수는 파이썬에서 잘 사용하지 않는 형태의 숫자 자료형이므로 간단히 눈으로만 익히고 넘어갑시다.
 
 
-## boll형
+## bool형
 - 참과 거짓을 나타내는 자료형, 프로그램의 실행 흐름을 제어 할때 사용
 - True(참),False(거짓)의 두 가지 값만 가질 수 있으며, 첫번째는 항상 대문자 
 - 자료형의 참과 거짓
