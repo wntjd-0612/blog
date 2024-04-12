@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://blog.wntjd.kr/p/baekjoon_28215/</loc>
+    <lastmod>2024-04-12T03:48:00+00:00</lastmod>
+  </url><url>
     <loc>https://blog.wntjd.kr/p/simple_python2/</loc>
     <lastmod>2024-04-12T00:48:00+00:00</lastmod>
   </url><url>
@@ -12,30 +15,36 @@
     <lastmod>2024-04-11T06:04:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.wntjd.kr/</loc>
-    <lastmod>2024-04-12T00:48:00+00:00</lastmod>
+    <lastmod>2024-04-12T03:48:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.wntjd.kr/tags/ana/</loc>
-    <lastmod>2024-04-12T00:48:00+00:00</lastmod>
+    <lastmod>2024-04-12T03:48:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.wntjd.kr/categories/ana/</loc>
-    <lastmod>2024-04-12T00:48:00+00:00</lastmod>
+    <lastmod>2024-04-12T03:48:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.wntjd.kr/tags/basic/</loc>
-    <lastmod>2024-04-12T00:48:00+00:00</lastmod>
+    <loc>https://blog.wntjd.kr/tags/baekjoon/</loc>
+    <lastmod>2024-04-12T03:48:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.wntjd.kr/categories/baekjoon/</loc>
+    <lastmod>2024-04-12T03:48:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.wntjd.kr/categories/</loc>
-    <lastmod>2024-04-12T00:48:00+00:00</lastmod>
+    <lastmod>2024-04-12T03:48:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.wntjd.kr/post/</loc>
-    <lastmod>2024-04-12T00:48:00+00:00</lastmod>
+    <lastmod>2024-04-12T03:48:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.wntjd.kr/tags/python/</loc>
-    <lastmod>2024-04-12T00:48:00+00:00</lastmod>
+    <lastmod>2024-04-12T03:48:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.wntjd.kr/categories/python/</loc>
-    <lastmod>2024-04-12T00:48:00+00:00</lastmod>
+    <lastmod>2024-04-12T03:48:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.wntjd.kr/tags/</loc>
+    <lastmod>2024-04-12T03:48:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.wntjd.kr/tags/basic/</loc>
     <lastmod>2024-04-12T00:48:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.wntjd.kr/tags/install/</loc>
