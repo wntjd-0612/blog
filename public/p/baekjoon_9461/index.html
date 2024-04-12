@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="python 기초문법-자료형">
-<title>python 기초문법2</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="백준 파도반 수열 풀이">
+<title>백준 9461</title>
 
-<link rel='canonical' href='https://blog.wntjd.kr/p/simple_python2/'>
+<link rel='canonical' href='https://blog.wntjd.kr/p/baekjoon_9461/'>
 
-<link rel="stylesheet" href="/scss/style.min.a98711dd77f882bba6c64662ae7c3515ce1792919805694d18301cf79deae512.css"><meta property='og:title' content="python 기초문법2">
-<meta property='og:description' content="python 기초문법-자료형">
-<meta property='og:url' content='https://blog.wntjd.kr/p/simple_python2/'>
+<link rel="stylesheet" href="/scss/style.min.a98711dd77f882bba6c64662ae7c3515ce1792919805694d18301cf79deae512.css"><meta property='og:title' content="백준 9461">
+<meta property='og:description' content="백준 파도반 수열 풀이">
+<meta property='og:url' content='https://blog.wntjd.kr/p/baekjoon_9461/'>
 <meta property='og:site_name' content='wntjd'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='basic' /><meta property='article:tag' content='ana' /><meta property='article:tag' content='python' /><meta property='article:published_time' content='2024-04-12T00:48:00&#43;00:00'/><meta property='article:modified_time' content='2024-04-12T00:48:00&#43;00:00'/><meta property='og:image' content='https://blog.wntjd.kr/p/simple_python2/thumb.png' />
-<meta name="twitter:title" content="python 기초문법2">
-<meta name="twitter:description" content="python 기초문법-자료형"><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='https://blog.wntjd.kr/p/simple_python2/thumb.png' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='baekjoon' /><meta property='article:tag' content='ana' /><meta property='article:tag' content='python' /><meta property='article:published_time' content='2024-04-12T06:48:00&#43;00:00'/><meta property='article:modified_time' content='2024-04-12T06:48:00&#43;00:00'/><meta property='og:image' content='https://blog.wntjd.kr/p/baekjoon_9461/thumb.png' />
+<meta name="twitter:title" content="백준 9461">
+<meta name="twitter:description" content="백준 파도반 수열 풀이"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://blog.wntjd.kr/p/baekjoon_9461/thumb.png' />
     <link rel="shortcut icon" href="/favicon.png" />
 
     </head>
@@ -229,36 +229,10 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li><a href="#리스트-자료형">리스트 자료형</a>
-      <ol>
-        <li><a href="#리스트-연산">리스트 연산</a></li>
-        <li><a href="#리스트-인덱싱과-슬라이싱">리스트 인덱싱과 슬라이싱</a>
-          <ol>
-            <li><a href="#리스트-인덱싱">리스트 인덱싱</a></li>
-            <li><a href="#리스트-슬라이싱">리스트 슬라이싱</a></li>
-            <li><a href="#리스트-수정하기">리스트 수정하기</a></li>
-          </ol>
-        </li>
-        <li><a href="#리스트-함수">리스트 함수</a></li>
-      </ol>
-    </li>
-    <li><a href="#튜플-자료형">튜플 자료형</a>
-      <ol>
-        <li><a href="#튜플-연산-1">튜플 연산 </a></li>
-        <li><a href="#튜플-인덱싱과-슬라이싱-1">튜플 인덱싱과 슬라이싱 </a></li>
-      </ol>
-    </li>
-    <li><a href="#딕셔너리-자료형">딕셔너리 자료형</a>
-      <ol>
-        <li><a href="#요소추가-수정-삭제">요소추가, 수정, 삭제</a></li>
-        <li><a href="#딕셔너리-함수">딕셔너리 함수</a></li>
-      </ol>
-    </li>
-    <li><a href="#집합-자료형">집합 자료형</a>
-      <ol>
-        <li><a href="#집합-연산과-함수">집합 연산과 함수</a></li>
-      </ol>
-    </li>
+    <li><a href="#문제-설명">문제 설명</a></li>
+    <li><a href="#풀이-순서">풀이 순서</a></li>
+    <li><a href="#풀이-1">풀이 1</a></li>
+    <li><a href="#풀이-2">풀이 2</a></li>
   </ol>
 </nav>
         </div>
@@ -271,15 +245,15 @@
 
             <main class="main full-width">
     <article class="has-image main-article">
-    <header class="article-header" onclick="location.href='\/p\/simple_python2\/'" style="cursor: pointer;" >
+    <header class="article-header" onclick="location.href='\/p\/baekjoon_9461\/'" style="cursor: pointer;" >
         <div class="article-image">
-            <a href="/p/simple_python2/">
-                <img src="/p/simple_python2/thumb_hu6ce46be598242d68941202901d39eb59_93419_800x0_resize_box_3.png"
-                        srcset="/p/simple_python2/thumb_hu6ce46be598242d68941202901d39eb59_93419_800x0_resize_box_3.png 800w, /p/simple_python2/thumb_hu6ce46be598242d68941202901d39eb59_93419_1600x0_resize_box_3.png 1600w"
+            <a href="/p/baekjoon_9461/">
+                <img src="/p/baekjoon_9461/thumb_hufeb8c3ca71f33f4bcc8d200b08d27217_56508_800x0_resize_box_3.png"
+                        srcset="/p/baekjoon_9461/thumb_hufeb8c3ca71f33f4bcc8d200b08d27217_56508_800x0_resize_box_3.png 800w, /p/baekjoon_9461/thumb_hufeb8c3ca71f33f4bcc8d200b08d27217_56508_1600x0_resize_box_3.png 1600w"
                         width="800" 
                         height="206" 
                         loading="lazy"
-                        alt="Featured image of post python 기초문법2" />
+                        alt="Featured image of post 백준 9461" />
                 
             </a>
         </div>
@@ -289,12 +263,16 @@
     
     <header class="article-category">
         
-            <a href="/categories/python/" >
-                Python
+            <a href="/categories/baekjoon/" >
+                Baekjoon
             </a>
         
             <a href="/categories/ana/" >
                 Ana
+            </a>
+        
+            <a href="/categories/python/" >
+                Python
             </a>
         
     </header>
@@ -302,12 +280,12 @@
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/p/simple_python2/">python 기초문법2</a>
+            <a href="/p/baekjoon_9461/">백준 9461</a>
         </h2>
     
         
         <h3 class="article-subtitle">
-            python 기초문법-자료형
+            백준 파도반 수열 풀이
         </h3>
         
     </div>
@@ -343,7 +321,7 @@
 
 
                 <time class="article-time--reading">
-                    4 분 정도
+                    2 분 정도
                 </time>
             </div>
         
@@ -359,298 +337,92 @@
     <section class="article-content">
     
     
-    <h1 id="python의-자료형">python의 자료형</h1>
+    <h1 id="대피소">대피소</h1>
 <ul>
-<li>파이썬은 자동으로 자료형을 추론해 주지만, 프로그램을 만들때 어떤 자료를 저장할 것인지 알고 있는 것은 매우 중요합니다.</li>
-<li>파이썬의 자료형은 크게 데이터형과 컨테이너형으로 구분할 수 있습니다. 오늘은 컨테이너형만 다룰 것입니다.</li>
+<li><a class="link" href="https://www.acmicpc.net/problem/9461"  target="_blank" rel="noopener"
+    >문제</a></li>
 </ul>
-<h1 id="컨테이너형">컨테이너형</h1>
+<h2 id="문제-설명">문제 설명</h2>
 <ul>
-<li>여러 개의 변수를 하나의 이름으로 묶어서 관리할 수 있는 데이터 포맷 형태</li>
+<li>이 문제는 기본적인 <a class="link" href="https://namu.wiki/w/%EB%8F%99%EC%A0%81%20%EA%B3%84%ED%9A%8D%EB%B2%95"  target="_blank" rel="noopener"
+    >dp</a><sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> 문제이다.</li>
+<li>다른 DP와 같이 규칙을 찾아서 그 규칙에 맞게 구현하면 된다.</li>
 </ul>
-<h2 id="리스트-자료형">리스트 자료형</h2>
+<h2 id="풀이-순서">풀이 순서</h2>
 <ul>
-<li>데이터를 연속적인 공간에 저장하는 자료구조, 서로 다른 자료형도 저장할 수 있습니다.</li>
-<li>리스트에 각 요소는 쉼표로 구분, 대괄호(<code>[]</code>)로 감싸서 표현합니다</li>
+<li>dp 점화식을 구한다</li>
+<li>구현한다
+-이 문제에는 두가지 점화식이 있다</li>
 </ul>
-<h3 id="리스트-연산">리스트 연산</h3>
+<h2 id="풀이-1">풀이 1</h2>
 <ul>
-<li>덧셈기호(<code>+</code>)를 사용하여 리스트 연결 연산을 수행할 수 있다.</li>
-<li>곱셈기호(<code>*</code>)를 사용하여 리스트를 반복하는 연산을 수행할 수 있다.
-<ul>
-<li>리스트<em>정수, 정수</em>리스트 형태로 사용할 수 있다.</li>
-</ul>
-</li>
-<li>len함수(<code>len()</code>)를 사용하여 리스트에 길이를 구할 수 있다.</li>
-</ul>
-<h3 id="리스트-인덱싱과-슬라이싱">리스트 인덱싱과 슬라이싱</h3>
-<h4 id="리스트-인덱싱">리스트 인덱싱</h4>
-<ul>
-<li>인덱싱(indexing): 수많은 데이터중 원하는 항목을 쉽게 찾도록 &lsquo;가리키는 것&rsquo;</li>
-<li>⭐인덱스 번호는 0부터 시작</li>
-<li>뒤에서부터 읽기 위해서 마이너스 기호를 사용, 이때 뒤에서부터 첫 번째값은 인덱스<code>-1</code>로 표현한다.</li>
-</ul>
-<h4 id="리스트-슬라이싱">리스트 슬라이싱</h4>
-<ul>
-<li>슬라이싱(slicing): 인덱스를 사용하여 수많은 데이터 중 원하는 항목을 <code>잘라내는 것</code></li>
-</ul>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="n">변수명</span><span class="p">[</span><span class="n">시작</span> <span class="n">인덱스</span> <span class="n">번호</span><span class="p">:</span><span class="n">끝</span> <span class="n">인덱스</span> <span class="n">번호</span><span class="p">]</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><ul>
-<li>시작 인덱스 번호에 해당하는 값부터 잘라내며, 끝 인덱스 번호는 포함하지 않음</li>
-<li>시작 인덱스 번호 생략: 리스트에 시작 ~ 끝 인덱스 번호 전</li>
-<li>끝 인덱스 번호 생략: 시작 인덱스 번호 ~ 리스트의 끝</li>
-<li>시작과 끝의 인덱스 번호를 모두 생략: 리스트의 시작 ~ 리스트의 끝</li>
-</ul>
-<h4 id="리스트-수정하기">리스트 수정하기</h4>
-<ul>
-<li>문자열은 immutable 타입이기 때문에 인덱싱으로 값을 수정할 수 없지만, 리스트는 인덱싱과 슬라이싱을 사용하여 수정 할 수 있다.</li>
-<li>리스트의 기존 요소를 빈칸으로 수정함으로써 요소를 삭제할 수 있으며, dle 키워드를 사용하여 삭제할 수 있다.</li>
-</ul>
-<h3 id="리스트-함수">리스트 함수</h3>
-<ul>
-<li>문자열과 마찬가지로 리스트 변수 이름 뒤에 <code>.</code>을 붙여 함수를 호출하는 방식으로 사용한다.</li>
-<li>함수의 종류</li>
-</ul>
-<div class="table-wrapper"><table>
-<thead>
-<tr>
-<th style="text-align:center">종류</th>
-<th style="text-align:center">함수</th>
-<th style="text-align:center">설명</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">요소 추가</td>
-<td style="text-align:center">append(x)</td>
-<td style="text-align:center">리스트 맨 뒤에 요소 x 추가</td>
-</tr>
-<tr>
-<td style="text-align:center"></td>
-<td style="text-align:center">insert(x,y)</td>
-<td style="text-align:center">인덱스 x 위치에 y를 추가</td>
-</tr>
-<tr>
-<td style="text-align:center"></td>
-<td style="text-align:center">extend(x)</td>
-<td style="text-align:center">리스트 맨 뒤에 리스트 x를 추가</td>
-</tr>
-<tr>
-<td style="text-align:center">요소 삭제</td>
-<td style="text-align:center">remove(x)</td>
-<td style="text-align:center">가장 처음 나오는 x를 찾아 삭제, 없으면 오류 발생</td>
-</tr>
-<tr>
-<td style="text-align:center"></td>
-<td style="text-align:center">pop()</td>
-<td style="text-align:center">리스트 마지막 요소를 반환 후 삭제</td>
-</tr>
-<tr>
-<td style="text-align:center">요소 배열</td>
-<td style="text-align:center">sort()</td>
-<td style="text-align:center">리스트 요소를 정렬</td>
-</tr>
-<tr>
-<td style="text-align:center"></td>
-<td style="text-align:center">reverse()</td>
-<td style="text-align:center">리스트를 역순으로 뒤집기</td>
-</tr>
-<tr>
-<td style="text-align:center">리스트 정보</td>
-<td style="text-align:center">index(x)</td>
-<td style="text-align:center">x를 찾아 인덱스 값을 반환, 없다면 오류 발생</td>
-</tr>
-<tr>
-<td style="text-align:center"></td>
-<td style="text-align:center">count(x)</td>
-<td style="text-align:center">리스트 내 x의 개수 반환</td>
-</tr>
-</tbody>
-</table></div>
-<ul>
-<li>빈 리스트에 값을 초기화하지 않은 상태에서는 인덱스를 사용하여 요소에 접근할 수 없다.</li>
-<li>빈 리스트에 새로운 요소를 추가하기 위해서는 append 함수를 사용해야 하며, 여러 개의 요소를 한 번에 추가하려는 경우 extend 함수를 사용할 수 있다.</li>
-</ul>
-<h2 id="튜플-자료형">튜플 자료형</h2>
-<ul>
-<li>몇가지의 다른 점을 제외하면 리스트와 거의 비슷한 자료형이다.</li>
-<li>아래 몇가지 차이점이 있다
-<ul>
-<li>리스트는 [], 튜플은 ()으로 둘러싼다.</li>
-<li>리스트는 요솟값의 생성, 삭제, 수정이 가능하지만, 튜플은 요솟값을 바꿀 수 없다.</li>
-</ul>
-</li>
-</ul>
-<h3 id="튜플-연산-1">튜플 연산 <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></h3>
-<ul>
-<li>덧셈기호(<code>+</code>)를 사용하여 튜플 연결 연산을 수행할 수 있다.</li>
-<li>곱셈기호(<code>*</code>)를 사용하여 튜플을 반복하는 연산을 수행할 수 있다.
-<ul>
-<li>리스트<em>튜플, 정수</em>튜플 형태로 사용할 수 있다.</li>
-</ul>
-</li>
-<li>len함수(<code>len()</code>)를 사용하여 리스트에 길이를 구할 수 있다.</li>
-</ul>
-<h3 id="튜플-인덱싱과-슬라이싱-1">튜플 인덱싱과 슬라이싱 <sup id="fnref1:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></h3>
-<ul>
-<li>문자열과 리스트의 인덱싱, 슬라이싱과 동일하게 사용할 수 있다.</li>
-</ul>
-<h2 id="딕셔너리-자료형">딕셔너리 자료형</h2>
-<ul>
-<li>KEY와 VALUE를 한쌍으로 가지며 대응관계를 나타내는 자료형이다.</li>
-<li>요소값에 대한 순서가 없으며 <code>&quot;Key: Value&quot;</code>의 형태로 값을 저장하요 Ket를 통해 Value를 얻을 수 있다.</li>
-<li>쌍을 이루는 각 요소는 쉼표로 구분하며 중괄호(<code>{}</code>)로 감싸서 표현한다.</li>
+<li>이 문제의 수열 (1,1,1,2,2,3,4,5,7,9, &hellip;.)을 보면 규칙을 찾을 수 있다.</li>
+<li>i번째 수는 i-1번째수와 i-5번째 수를 더한 값이라는 것이다.(점화식으로 표현하면 dp[i]=dp[i-5]+dp[i-1])</li>
+<li>이에 따른 코드를 적어보면</li>
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">dic</span> <span class="o">=</span> <span class="p">{</span><span class="n">key1</span><span class="p">:</span><span class="n">value1</span><span class="p">,</span><span class="n">key2</span><span class="p">:</span><span class="n">value2</span><span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="n">dic</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">key1</span><span class="o">=</span><span class="n">value1</span><span class="p">,</span><span class="n">key2</span><span class="o">=</span><span class="n">value2</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">dic</span> <span class="o">=</span> <span class="p">{}</span> <span class="c1">#비어있는 딕셔너리</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">dp</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span> <span class="c1">#i-5번째 수까지 필요하므로 5개의 배열을 생성한다</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">n</span><span class="o">&lt;</span><span class="mi">5</span><span class="p">:</span><span class="k">return</span> <span class="n">dp</span><span class="p">[</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="c1">#만약 i가 5이하이면 인덱싱에 맞춰서 해당 값을 반환해준다</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="n">n</span><span class="p">):</span> <span class="c1">#i가 5이상이면 for문을 통해 점화식을 써서 값을 구해준다</span>
+</span></span><span class="line"><span class="cl">        <span class="n">dp</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">5</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">dp</span><span class="p">[</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="c1">#인덱스를 이용하여 해당번째 값을 반환한다</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())):</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())))</span><span class="c1">#미친 숏코딩인데 이해하실 수 있죠....?  </span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><ul>
-<li>-주의 사항 -
+</div><h2 id="풀이-2">풀이 2</h2>
 <ul>
-<li>딕셔너리의 Key에 리스트를 사용할 수 없다.</li>
-<li>value에는 어떤 값이든 사용할 수 있다.</li>
-<li>Key는 Value를 찾기 위한 유일한 값이므로 중복을 사용할 경우 하나를 제외한 나머지 요소는 무시된다.</li>
-</ul>
-</li>
-</ul>
-<h3 id="요소추가-수정-삭제">요소추가, 수정, 삭제</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">딕셔너리</span> <span class="n">이름</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span> <span class="c1">#딕셔너리에 값 추가</span>
-</span></span><span class="line"><span class="cl"><span class="k">del</span> <span class="n">딕셔너리</span> <span class="n">이름</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="c1">#{key:value} 쌍 삭제</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="딕셔너리-함수">딕셔너리 함수</h3>
-<div class="table-wrapper"><table>
-<thead>
-<tr>
-<th>함수</th>
-<th>설명</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>keys</td>
-<td>key만 모아서 dict_keys 객채 형태로 리턴</td>
-</tr>
-<tr>
-<td>values</td>
-<td>value만 모아서 dict_values 객채 형태로 리턴</td>
-</tr>
-<tr>
-<td>item</td>
-<td>key,value 쌍을 튜플로 묶어 dict_items 객채 형태로 리턴</td>
-</tr>
-<tr>
-<td>clear</td>
-<td>key:value 쌍 모두 지우기</td>
-</tr>
-<tr>
-<td>get(key)</td>
-<td>key로 value 얻기</td>
-</tr>
-<tr>
-<td>key in x</td>
-<td>key가 딕셔너리 x안에 있는지 조사하여 True/False 반환</td>
-</tr>
-</tbody>
-</table></div>
-<h2 id="집합-자료형">집합 자료형</h2>
-<ul>
-<li>집합의 특징을 그대로 구현하여 집합에 관련된 것을 쉽게 처리하기 위한 자료형</li>
-<li>집합의 각 요소는 쉼표로 구현하고 <code>{}</code>로 감싸서 표현한다.</li>
-<li>요소의 순서가 없고 그로인해 인덱싱과 슬라이싱을 사용할 수 없다.</li>
-<li>중복되는 값은 한 개만 저장하기 때문에 리스트 혹은 집합은 집합의 원소가 될 수 없다.</li>
+<li>이 문제의 수열 (1,1,1,2,2,3,4,5,7,9, &hellip;.)을 보면 규칙을 찾을 수 있다.</li>
+<li>i번째 수는 i-2번째수와 i-3번째 수를 더한 값이라는 것이다.(점화식으로 표현하면 dp[i]=dp[i-5]+dp[i-1])</li>
+<li>이에 따른 코드를 적어보면</li>
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">집합</span> <span class="n">이름</span> <span class="o">=</span> <span class="p">{</span><span class="n">요소1</span><span class="p">,</span><span class="n">요소2</span><span class="p">,</span> <span class="o">...</span><span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="n">집합</span> <span class="n">이름</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">묶음</span> <span class="n">자료형</span><span class="p">)</span><span class="c1">#문자열,리스트, 튜플을 집합으로 변경</span>
-</span></span><span class="line"><span class="cl"><span class="n">집합</span> <span class="n">이름</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">dp</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span> <span class="c1">#i-3번째 수까지 필요하므로 3개의 배열을 생성한다</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">n</span><span class="o">&lt;</span><span class="mi">3</span><span class="p">:</span><span class="k">return</span> <span class="n">dp</span><span class="p">[</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="c1">#만약 i가 5이하이면 인덱싱에 맞춰서 해당 값을 반환해준다</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="n">n</span><span class="p">):</span> <span class="c1">#i가 5이상이면 for문을 통해 점화식을 써서 값을 구해준다</span>
+</span></span><span class="line"><span class="cl">        <span class="n">dp</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span><span class="o">+</span><span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">3</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">dp</span><span class="p">[</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="c1">#인덱스를 이용하여 해당번째 값을 반환한다</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())):</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())))</span><span class="c1">#미친 숏코딩인데 이해하실 수 있죠....?  </span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="집합-연산과-함수">집합 연산과 함수</h3>
-<ul>
-<li>종류</li>
-</ul>
-<div class="table-wrapper"><table>
-<thead>
-<tr>
-<th>연산</th>
-<th>설명</th>
-<th>사용 구문</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>교집합</td>
-<td>집합에 공통으로 들어 있는 원소의 집합</td>
-<td>&amp; ,intersection()</td>
-</tr>
-<tr>
-<td>합집합</td>
-<td>적어도 한 집합에 들어 있는 원소의 집합</td>
-<td>| ,union()</td>
-</tr>
-<tr>
-<td>차집합</td>
-<td>A에 대한 B의 차집합(A-B)은 A의 속하고 B에는 속하지 않는 원소의 집합</td>
-<td>- ,difference()</td>
-</tr>
-</tbody>
-</table></div>
-<div class="table-wrapper"><table>
-<thead>
-<tr>
-<th>함수</th>
-<th>설명</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>add(x)</td>
-<td>x 값 추가</td>
-</tr>
-<tr>
-<td>update(묶음 자료형)</td>
-<td>묶음 자료형 내 여러개의 요소 추가</td>
-</tr>
-<tr>
-<td>remove(x)</td>
-<td>x의 값 삭제</td>
-</tr>
-</tbody>
-</table></div>
+</div><p><sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></p>
 <div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
 <li id="fn:1">
-<p>그냥 리스트랑 똑같다&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref1:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>나중에 설명하는 글을 쓸껀데 지금은 없으니깐 나무위키 문서 넣어야징&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>사실상 점화식만 바꾸면 되는게 학계의 점심 뭐먹지?&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </div>
@@ -662,7 +434,7 @@
     
     <section class="article-tags">
         
-            <a href="/tags/basic/">Basic</a>
+            <a href="/tags/baekjoon/">Baekjoon</a>
         
             <a href="/tags/ana/">Ana</a>
         
@@ -712,54 +484,6 @@
             
                 
 <article class="has-image">
-    <a href="/p/simple_python1/">
-        
-        
-            <div class="article-image">
-                <img src="/p/simple_python1/thumb.3b0892711d7711382d9e42bf4e1860d1_hu6ce46be598242d68941202901d39eb59_93419_250x150_fill_box_smart1_3.png" 
-                        width="250" 
-                        height="150" 
-                        loading="lazy"
-                        alt="Featured image of post python 기초문법1"
-                        data-key="simple_python1" 
-                        data-hash="md5-OwiScR13ETgtnkK/Thhg0Q==">
-                
-            </div>
-        
-
-        <div class="article-details">
-            <h2 class="article-title">python 기초문법1</h2>
-        </div>
-    </a>
-</article>
-
-            
-                
-<article class="has-image">
-    <a href="/p/baekjoon_9461/">
-        
-        
-            <div class="article-image">
-                <img src="/p/baekjoon_9461/thumb.7069dd5e24bd85b6ec03a61010feecf0_hufeb8c3ca71f33f4bcc8d200b08d27217_56508_250x150_fill_box_smart1_3.png" 
-                        width="250" 
-                        height="150" 
-                        loading="lazy"
-                        alt="Featured image of post 백준 9461"
-                        data-key="baekjoon_9461" 
-                        data-hash="md5-cGndXiS9hbbsA6YQEP7s8A==">
-                
-            </div>
-        
-
-        <div class="article-details">
-            <h2 class="article-title">백준 9461</h2>
-        </div>
-    </a>
-</article>
-
-            
-                
-<article class="has-image">
     <a href="/p/baekjoon_28215/">
         
         
@@ -777,6 +501,54 @@
 
         <div class="article-details">
             <h2 class="article-title">백준 28215</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/simple_python2/">
+        
+        
+            <div class="article-image">
+                <img src="/p/simple_python2/thumb.3b0892711d7711382d9e42bf4e1860d1_hu6ce46be598242d68941202901d39eb59_93419_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post python 기초문법2"
+                        data-key="simple_python2" 
+                        data-hash="md5-OwiScR13ETgtnkK/Thhg0Q==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">python 기초문법2</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/simple_python1/">
+        
+        
+            <div class="article-image">
+                <img src="/p/simple_python1/thumb.3b0892711d7711382d9e42bf4e1860d1_hu6ce46be598242d68941202901d39eb59_93419_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post python 기초문법1"
+                        data-key="simple_python1" 
+                        data-hash="md5-OwiScR13ETgtnkK/Thhg0Q==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">python 기초문법1</h2>
         </div>
     </a>
 </article>
