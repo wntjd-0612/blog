@@ -2,17 +2,320 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Basic on wntjd</title>
-        <link>https://blog.wntjd.kr/tags/basic/</link>
+        <link>http://localhost:1313/tags/basic/</link>
         <description>Recent content in Basic on wntjd</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Thu, 11 Apr 2024 12:50:00 +0000</lastBuildDate><atom:link href="https://blog.wntjd.kr/tags/basic/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 12 Apr 2024 00:48:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/basic/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>python 기초문법2</title>
+        <link>http://localhost:1313/p/simple_python2/</link>
+        <pubDate>Fri, 12 Apr 2024 00:48:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/p/simple_python2/</guid>
+        <description>&lt;img src="http://localhost:1313/p/simple_python2/thumb.png" alt="Featured image of post python 기초문법2" /&gt;&lt;h1 id=&#34;python의-자료형&#34;&gt;python의 자료형&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;파이썬은 자동으로 자료형을 추론해 주지만, 프로그램을 만들때 어떤 자료를 저장할 것인지 알고 있는 것은 매우 중요합니다.&lt;/li&gt;
+&lt;li&gt;파이썬의 자료형은 크게 데이터형과 컨테이너형으로 구분할 수 있습니다. 오늘은 컨테이너형만 다룰 것입니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;컨테이너형&#34;&gt;컨테이너형&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;여러 개의 변수를 하나의 이름으로 묶어서 관리할 수 있는 데이터 포맷 형태&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;리스트-자료형&#34;&gt;리스트 자료형&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;데이터를 연속적인 공간에 저장하는 자료구조, 서로 다른 자료형도 저장할 수 있습니다.&lt;/li&gt;
+&lt;li&gt;리스트에 각 요소는 쉼표로 구분, 대괄호(&lt;code&gt;[]&lt;/code&gt;)로 감싸서 표현합니다&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;리스트-연산&#34;&gt;리스트 연산&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;덧셈기호(&lt;code&gt;+&lt;/code&gt;)를 사용하여 리스트 연결 연산을 수행할 수 있다.&lt;/li&gt;
+&lt;li&gt;곱셈기호(&lt;code&gt;*&lt;/code&gt;)를 사용하여 리스트를 반복하는 연산을 수행할 수 있다.
+&lt;ul&gt;
+&lt;li&gt;리스트&lt;em&gt;정수, 정수&lt;/em&gt;리스트 형태로 사용할 수 있다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;len함수(&lt;code&gt;len()&lt;/code&gt;)를 사용하여 리스트에 길이를 구할 수 있다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;리스트-인덱싱과-슬라이싱&#34;&gt;리스트 인덱싱과 슬라이싱&lt;/h3&gt;
+&lt;h4 id=&#34;리스트-인덱싱&#34;&gt;리스트 인덱싱&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;인덱싱(indexing): 수많은 데이터중 원하는 항목을 쉽게 찾도록 &amp;lsquo;가리키는 것&amp;rsquo;&lt;/li&gt;
+&lt;li&gt;⭐인덱스 번호는 0부터 시작&lt;/li&gt;
+&lt;li&gt;뒤에서부터 읽기 위해서 마이너스 기호를 사용, 이때 뒤에서부터 첫 번째값은 인덱스&lt;code&gt;-1&lt;/code&gt;로 표현한다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;리스트-슬라이싱&#34;&gt;리스트 슬라이싱&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;슬라이싱(slicing): 인덱스를 사용하여 수많은 데이터 중 원하는 항목을 &lt;code&gt;잘라내는 것&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-py&#34; data-lang=&#34;py&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;변수명&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;시작&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;인덱스&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;번호&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;끝&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;인덱스&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;번호&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;시작 인덱스 번호에 해당하는 값부터 잘라내며, 끝 인덱스 번호는 포함하지 않음&lt;/li&gt;
+&lt;li&gt;시작 인덱스 번호 생략: 리스트에 시작 ~ 끝 인덱스 번호 전&lt;/li&gt;
+&lt;li&gt;끝 인덱스 번호 생략: 시작 인덱스 번호 ~ 리스트의 끝&lt;/li&gt;
+&lt;li&gt;시작과 끝의 인덱스 번호를 모두 생략: 리스트의 시작 ~ 리스트의 끝&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;리스트-수정하기&#34;&gt;리스트 수정하기&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;문자열은 immutable 타입이기 때문에 인덱싱으로 값을 수정할 수 없지만, 리스트는 인덱싱과 슬라이싱을 사용하여 수정 할 수 있다.&lt;/li&gt;
+&lt;li&gt;리스트의 기존 요소를 빈칸으로 수정함으로써 요소를 삭제할 수 있으며, dle 키워드를 사용하여 삭제할 수 있다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;리스트-함수&#34;&gt;리스트 함수&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;문자열과 마찬가지로 리스트 변수 이름 뒤에 &lt;code&gt;.&lt;/code&gt;을 붙여 함수를 호출하는 방식으로 사용한다.&lt;/li&gt;
+&lt;li&gt;함수의 종류&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;종류&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;함수&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;설명&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;요소 추가&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;append(x)&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;리스트 맨 뒤에 요소 x 추가&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;insert(x,y)&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;인덱스 x 위치에 y를 추가&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;extend(x)&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;리스트 맨 뒤에 리스트 x를 추가&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;요소 삭제&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;remove(x)&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;가장 처음 나오는 x를 찾아 삭제, 없으면 오류 발생&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;pop()&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;리스트 마지막 요소를 반환 후 삭제&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;요소 배열&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;sort()&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;리스트 요소를 정렬&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;reverse()&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;리스트를 역순으로 뒤집기&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;리스트 정보&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;index(x)&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;x를 찾아 인덱스 값을 반환, 없다면 오류 발생&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;count(x)&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;리스트 내 x의 개수 반환&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;빈 리스트에 값을 초기화하지 않은 상태에서는 인덱스를 사용하여 요소에 접근할 수 없다.&lt;/li&gt;
+&lt;li&gt;빈 리스트에 새로운 요소를 추가하기 위해서는 append 함수를 사용해야 하며, 여러 개의 요소를 한 번에 추가하려는 경우 extend 함수를 사용할 수 있다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;튜플-자료형&#34;&gt;튜플 자료형&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;몇가지의 다른 점을 제외하면 리스트와 거의 비슷한 자료형이다.&lt;/li&gt;
+&lt;li&gt;아래 몇가지 차이점이 있다
+&lt;ul&gt;
+&lt;li&gt;리스트는 [], 튜플은 ()으로 둘러싼다.&lt;/li&gt;
+&lt;li&gt;리스트는 요솟값의 생성, 삭제, 수정이 가능하지만, 튜플은 요솟값을 바꿀 수 없다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;튜플-연산-1&#34;&gt;튜플 연산 &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;덧셈기호(&lt;code&gt;+&lt;/code&gt;)를 사용하여 튜플 연결 연산을 수행할 수 있다.&lt;/li&gt;
+&lt;li&gt;곱셈기호(&lt;code&gt;*&lt;/code&gt;)를 사용하여 튜플을 반복하는 연산을 수행할 수 있다.
+&lt;ul&gt;
+&lt;li&gt;리스트&lt;em&gt;튜플, 정수&lt;/em&gt;튜플 형태로 사용할 수 있다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;len함수(&lt;code&gt;len()&lt;/code&gt;)를 사용하여 리스트에 길이를 구할 수 있다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;튜플-인덱싱과-슬라이싱-1&#34;&gt;튜플 인덱싱과 슬라이싱 &lt;sup id=&#34;fnref1:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;문자열과 리스트의 인덱싱, 슬라이싱과 동일하게 사용할 수 있다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;딕셔너리-자료형&#34;&gt;딕셔너리 자료형&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;KEY와 VALUE를 한쌍으로 가지며 대응관계를 나타내는 자료형이다.&lt;/li&gt;
+&lt;li&gt;요소값에 대한 순서가 없으며 &lt;code&gt;&amp;quot;Key: Value&amp;quot;&lt;/code&gt;의 형태로 값을 저장하요 Ket를 통해 Value를 얻을 수 있다.&lt;/li&gt;
+&lt;li&gt;쌍을 이루는 각 요소는 쉼표로 구분하며 중괄호(&lt;code&gt;{}&lt;/code&gt;)로 감싸서 표현한다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;dic&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;key1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;value1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;key2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;value2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;dic&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;dict&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;key1&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;value1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;key2&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;value2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;dic&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{}&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;#비어있는 딕셔너리&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;-주의 사항 -
+&lt;ul&gt;
+&lt;li&gt;딕셔너리의 Key에 리스트를 사용할 수 없다.&lt;/li&gt;
+&lt;li&gt;value에는 어떤 값이든 사용할 수 있다.&lt;/li&gt;
+&lt;li&gt;Key는 Value를 찾기 위한 유일한 값이므로 중복을 사용할 경우 하나를 제외한 나머지 요소는 무시된다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;요소추가-수정-삭제&#34;&gt;요소추가, 수정, 삭제&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;딕셔너리&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;이름&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;key&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;value&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;#딕셔너리에 값 추가&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;del&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;딕셔너리&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;이름&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;key&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;#{key:value} 쌍 삭제&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;딕셔너리-함수&#34;&gt;딕셔너리 함수&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;함수&lt;/th&gt;
+&lt;th&gt;설명&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;keys&lt;/td&gt;
+&lt;td&gt;key만 모아서 dict_keys 객채 형태로 리턴&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;values&lt;/td&gt;
+&lt;td&gt;value만 모아서 dict_values 객채 형태로 리턴&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;item&lt;/td&gt;
+&lt;td&gt;key,value 쌍을 튜플로 묶어 dict_items 객채 형태로 리턴&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;clear&lt;/td&gt;
+&lt;td&gt;key:value 쌍 모두 지우기&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;get(key)&lt;/td&gt;
+&lt;td&gt;key로 value 얻기&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;key in x&lt;/td&gt;
+&lt;td&gt;key가 딕셔너리 x안에 있는지 조사하여 True/False 반환&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;집합-자료형&#34;&gt;집합 자료형&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;집합의 특징을 그대로 구현하여 집합에 관련된 것을 쉽게 처리하기 위한 자료형&lt;/li&gt;
+&lt;li&gt;집합의 각 요소는 쉼표로 구현하고 &lt;code&gt;{}&lt;/code&gt;로 감싸서 표현한다.&lt;/li&gt;
+&lt;li&gt;요소의 순서가 없고 그로인해 인덱싱과 슬라이싱을 사용할 수 없다.&lt;/li&gt;
+&lt;li&gt;중복되는 값은 한 개만 저장하기 때문에 리스트 혹은 집합은 집합의 원소가 될 수 없다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;집합&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;이름&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;요소1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;요소2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;...&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;집합&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;이름&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;set&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;묶음&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;자료형&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;#문자열,리스트, 튜플을 집합으로 변경&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;집합&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;이름&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;set&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;집합-연산과-함수&#34;&gt;집합 연산과 함수&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;종류&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;연산&lt;/th&gt;
+&lt;th&gt;설명&lt;/th&gt;
+&lt;th&gt;사용 구문&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;교집합&lt;/td&gt;
+&lt;td&gt;집합에 공통으로 들어 있는 원소의 집합&lt;/td&gt;
+&lt;td&gt;&amp;amp; ,intersection()&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;합집합&lt;/td&gt;
+&lt;td&gt;적어도 한 집합에 들어 있는 원소의 집합&lt;/td&gt;
+&lt;td&gt;| ,union()&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;차집합&lt;/td&gt;
+&lt;td&gt;A에 대한 B의 차집합(A-B)은 A의 속하고 B에는 속하지 않는 원소의 집합&lt;/td&gt;
+&lt;td&gt;- ,difference()&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;함수&lt;/th&gt;
+&lt;th&gt;설명&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;add(x)&lt;/td&gt;
+&lt;td&gt;x 값 추가&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;update(묶음 자료형)&lt;/td&gt;
+&lt;td&gt;묶음 자료형 내 여러개의 요소 추가&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;remove(x)&lt;/td&gt;
+&lt;td&gt;x의 값 삭제&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;그냥 리스트랑 똑같다&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref1:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        </item>
+        <item>
         <title>python 기초문법1</title>
-        <link>https://blog.wntjd.kr/p/simple_python1/</link>
+        <link>http://localhost:1313/p/simple_python1/</link>
         <pubDate>Thu, 11 Apr 2024 12:50:00 +0000</pubDate>
         
-        <guid>https://blog.wntjd.kr/p/simple_python1/</guid>
-        <description>&lt;img src="https://blog.wntjd.kr/p/simple_python1/thumb.png" alt="Featured image of post python 기초문법1" /&gt;&lt;h1 id=&#34;python의-자료형&#34;&gt;python의 자료형&lt;/h1&gt;
+        <guid>http://localhost:1313/p/simple_python1/</guid>
+        <description>&lt;img src="http://localhost:1313/p/simple_python1/thumb.png" alt="Featured image of post python 기초문법1" /&gt;&lt;h1 id=&#34;python의-자료형&#34;&gt;python의 자료형&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;파이썬은 자동으로 자료형을 추론해 주지만, 프로그램을 만들때 어떤 자료를 저장할 것인지 알고 있는 것은 매우 중요합니다.&lt;/li&gt;
 &lt;li&gt;파이썬의 자료형은 크게 데이터형과 컨테이너형으로 구분할 수 있습니다. 오늘은 데이터형만 다룰 것입니다.&lt;/li&gt;

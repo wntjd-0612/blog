@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Categories on wntjd</title>
-        <link>https://blog.wntjd.kr/categories/</link>
+        <link>http://localhost:1313/categories/</link>
         <description>Recent content in Categories on wntjd</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Thu, 11 Apr 2024 12:50:00 +0000</lastBuildDate><atom:link href="https://blog.wntjd.kr/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 12 Apr 2024 00:48:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Ana</title>
-        <link>https://blog.wntjd.kr/categories/ana/</link>
-        <pubDate>Thu, 11 Apr 2024 12:50:00 +0000</pubDate>
+        <link>http://localhost:1313/categories/ana/</link>
+        <pubDate>Fri, 12 Apr 2024 00:48:00 +0000</pubDate>
         
-        <guid>https://blog.wntjd.kr/categories/ana/</guid>
+        <guid>http://localhost:1313/categories/ana/</guid>
         <description></description>
         </item>
         <item>
         <title>Python</title>
-        <link>https://blog.wntjd.kr/categories/python/</link>
-        <pubDate>Thu, 11 Apr 2024 12:50:00 +0000</pubDate>
+        <link>http://localhost:1313/categories/python/</link>
+        <pubDate>Fri, 12 Apr 2024 00:48:00 +0000</pubDate>
         
-        <guid>https://blog.wntjd.kr/categories/python/</guid>
+        <guid>http://localhost:1313/categories/python/</guid>
         <description></description>
         </item>
         <item>
         <title>Example Category</title>
-        <link>https://blog.wntjd.kr/categories/example-category/</link>
+        <link>http://localhost:1313/categories/example-category/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://blog.wntjd.kr/categories/example-category/</guid>
+        <guid>http://localhost:1313/categories/example-category/</guid>
         <description></description>
         </item>
         

@@ -2,18 +2,18 @@
 <html lang="en-us" dir="ltr">
     <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="python 기초문법-자료형">
-<title>python 기초문법1</title>
+<title>python 기초문법2</title>
 
-<link rel='canonical' href='http://localhost:1313/p/simple_python1/'>
+<link rel='canonical' href='http://localhost:1313/p/simple_python2/'>
 
-<link rel="stylesheet" href="/scss/style.min.a98711dd77f882bba6c64662ae7c3515ce1792919805694d18301cf79deae512.css"><meta property='og:title' content="python 기초문법1">
+<link rel="stylesheet" href="/scss/style.min.a98711dd77f882bba6c64662ae7c3515ce1792919805694d18301cf79deae512.css"><meta property='og:title' content="python 기초문법2">
 <meta property='og:description' content="python 기초문법-자료형">
-<meta property='og:url' content='http://localhost:1313/p/simple_python1/'>
+<meta property='og:url' content='http://localhost:1313/p/simple_python2/'>
 <meta property='og:site_name' content='wntjd'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='basic' /><meta property='article:tag' content='ana' /><meta property='article:tag' content='python' /><meta property='article:published_time' content='2024-04-11T12:50:00&#43;00:00'/><meta property='article:modified_time' content='2024-04-11T12:50:00&#43;00:00'/><meta property='og:image' content='http://localhost:1313/p/simple_python1/thumb.png' />
-<meta name="twitter:title" content="python 기초문법1">
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='basic' /><meta property='article:tag' content='ana' /><meta property='article:tag' content='python' /><meta property='article:published_time' content='2024-04-12T00:48:00&#43;00:00'/><meta property='article:modified_time' content='2024-04-12T00:48:00&#43;00:00'/><meta property='og:image' content='http://localhost:1313/p/simple_python2/thumb.png' />
+<meta name="twitter:title" content="python 기초문법2">
 <meta name="twitter:description" content="python 기초문법-자료형"><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='http://localhost:1313/p/simple_python1/thumb.png' />
+    <meta name="twitter:image" content='http://localhost:1313/p/simple_python2/thumb.png' />
     <link rel="shortcut icon" href="/favicon.png" />
 
     </head>
@@ -229,15 +229,36 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li><a href="#숫자형">숫자형</a>
+    <li><a href="#리스트-자료형">리스트 자료형</a>
       <ol>
-        <li><a href="#정수형">정수형</a></li>
-        <li><a href="#실수형">실수형</a></li>
-        <li><a href="#8진수와-16진수">8진수와 16진수</a></li>
+        <li><a href="#리스트-연산">리스트 연산</a></li>
+        <li><a href="#리스트-인덱싱과-슬라이싱">리스트 인덱싱과 슬라이싱</a>
+          <ol>
+            <li><a href="#리스트-인덱싱">리스트 인덱싱</a></li>
+            <li><a href="#리스트-슬라이싱">리스트 슬라이싱</a></li>
+            <li><a href="#리스트-수정하기">리스트 수정하기</a></li>
+          </ol>
+        </li>
+        <li><a href="#리스트-함수">리스트 함수</a></li>
       </ol>
     </li>
-    <li><a href="#bool형">bool형</a></li>
-    <li><a href="#문자열-자료형">문자열 자료형</a></li>
+    <li><a href="#튜플-자료형">튜플 자료형</a>
+      <ol>
+        <li><a href="#튜플-연산-1">튜플 연산 </a></li>
+        <li><a href="#튜플-인덱싱과-슬라이싱-1">튜플 인덱싱과 슬라이싱 </a></li>
+      </ol>
+    </li>
+    <li><a href="#딕셔너리-자료형">딕셔너리 자료형</a>
+      <ol>
+        <li><a href="#요소추가-수정-삭제">요소추가, 수정, 삭제</a></li>
+        <li><a href="#딕셔너리-함수">딕셔너리 함수</a></li>
+      </ol>
+    </li>
+    <li><a href="#집합-자료형">집합 자료형</a>
+      <ol>
+        <li><a href="#집합-연산과-함수">집합 연산과 함수</a></li>
+      </ol>
+    </li>
   </ol>
 </nav>
         </div>
@@ -250,15 +271,15 @@
 
             <main class="main full-width">
     <article class="has-image main-article">
-    <header class="article-header" onclick="location.href='\/p\/simple_python1\/'" style="cursor: pointer;" >
+    <header class="article-header" onclick="location.href='\/p\/simple_python2\/'" style="cursor: pointer;" >
         <div class="article-image">
-            <a href="/p/simple_python1/">
-                <img src="/p/simple_python1/thumb_hu6ce46be598242d68941202901d39eb59_93419_800x0_resize_box_3.png"
-                        srcset="/p/simple_python1/thumb_hu6ce46be598242d68941202901d39eb59_93419_800x0_resize_box_3.png 800w, /p/simple_python1/thumb_hu6ce46be598242d68941202901d39eb59_93419_1600x0_resize_box_3.png 1600w"
+            <a href="/p/simple_python2/">
+                <img src="/p/simple_python2/thumb_hu6ce46be598242d68941202901d39eb59_93419_800x0_resize_box_3.png"
+                        srcset="/p/simple_python2/thumb_hu6ce46be598242d68941202901d39eb59_93419_800x0_resize_box_3.png 800w, /p/simple_python2/thumb_hu6ce46be598242d68941202901d39eb59_93419_1600x0_resize_box_3.png 1600w"
                         width="800" 
                         height="206" 
                         loading="lazy"
-                        alt="Featured image of post python 기초문법1" />
+                        alt="Featured image of post python 기초문법2" />
                 
             </a>
         </div>
@@ -281,7 +302,7 @@
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/p/simple_python1/">python 기초문법1</a>
+            <a href="/p/simple_python2/">python 기초문법2</a>
         </h2>
     
         
@@ -307,7 +328,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">Apr 44, 111150</time>
+                <time class="article-time--published">Apr 44, 121248</time>
             </div>
         
 
@@ -322,7 +343,7 @@
 
 
                 <time class="article-time--reading">
-                    2 분 정도
+                    4 분 정도
                 </time>
             </div>
         
@@ -341,166 +362,298 @@
     <h1 id="python의-자료형">python의 자료형</h1>
 <ul>
 <li>파이썬은 자동으로 자료형을 추론해 주지만, 프로그램을 만들때 어떤 자료를 저장할 것인지 알고 있는 것은 매우 중요합니다.</li>
-<li>파이썬의 자료형은 크게 데이터형과 컨테이너형으로 구분할 수 있습니다. 오늘은 데이터형만 다룰 것입니다.</li>
+<li>파이썬의 자료형은 크게 데이터형과 컨테이너형으로 구분할 수 있습니다. 오늘은 컨테이너형만 다룰 것입니다.</li>
 </ul>
-<h1 id="데이터형">데이터형</h1>
-<h2 id="숫자형">숫자형</h2>
-<div class="table-wrapper"><table>
-<thead>
-<tr>
-<th>항목</th>
-<th>파이썬 활용 예시</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>정수</td>
-<td>123, -456, 0</td>
-</tr>
-<tr>
-<td>실수</td>
-<td>123.45, -1234.5, 3.4e10</td>
-</tr>
-<tr>
-<td>8진수</td>
-<td>0o34, 0o25</td>
-</tr>
-<tr>
-<td>16진수</td>
-<td>0x2A, 0xFF</td>
-</tr>
-</tbody>
-</table></div>
-<h3 id="정수형">정수형</h3>
-<p>정수형(integer)이란 말 그대로 정수를 뜻하는 자료형을 말한다. 다음은 양의 정수와 음의 정수, 숫자 0을 변수 a에 대입하는 예입니다.</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">a</span> <span class="o">=</span> <span class="mi">123</span>
-</span></span><span class="line"><span class="cl"><span class="n">a</span> <span class="o">=</span> <span class="o">-</span><span class="mi">178</span>
-</span></span><span class="line"><span class="cl"><span class="n">a</span> <span class="o">=</span> <span class="mi">0</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="실수형">실수형</h3>
-<p>파이썬에서 실수형(floating-point)은 소수점이 포함된 숫자를 말한다. 다음은 실수를 변수 a에 대입하는 예이다. 일반적으로 볼 수 있는 실수형의 소수점 표현 방식입니다.</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">a</span> <span class="o">=</span> <span class="mf">1.2</span>
-</span></span><span class="line"><span class="cl"><span class="n">a</span> <span class="o">=</span> <span class="o">-</span><span class="mf">3.45</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>다음은 ‘컴퓨터식 지수 표현 방식’으로, 파이썬에서는 4.24e10 또는 4.24E10처럼 표현합니다(e와 E 둘 중 어느 것을 사용해도 됩니다).</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">a</span> <span class="o">=</span> <span class="mf">4.24E10</span> <span class="c1">#4.24*10**10</span>
-</span></span><span class="line"><span class="cl"><span class="n">a</span> <span class="o">=</span> <span class="mf">4.24e-10</span> <span class="c1">#4.24**(-10)</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="8진수와-16진수">8진수와 16진수</h3>
-<p>8진수(octal)를 만들기 위해서는 숫자가 0o 또는 0O(숫자 0 + 알파벳 소문자 o 또는 대문자 O)으로 시작하면 됩니다.</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">a</span><span class="o">=</span><span class="mo">0o177</span>
-</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="c1">#127</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>16진수(hexadecimal)를 만들기 위해서는 0x로 시작하면 됩니다.</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">a</span><span class="o">=</span><span class="mh">0x8ff</span>
-</span></span><span class="line"><span class="cl"><span class="n">b</span><span class="o">=</span><span class="mh">0xABC</span>
-</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="c1">#2748</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>8진수나 16진수는 파이썬에서 잘 사용하지 않는 형태의 숫자 자료형이므로 간단히 눈으로만 익히고 넘어갑시다.</p>
-<h2 id="bool형">bool형</h2>
+<h1 id="컨테이너형">컨테이너형</h1>
 <ul>
-<li>참과 거짓을 나타내는 자료형, 프로그램의 실행 흐름을 제어 할때 사용</li>
-<li>True(참),False(거짓)의 두 가지 값만 가질 수 있으며, 첫번째는 항상 대문자</li>
-<li>자료형의 참과 거짓</li>
+<li>여러 개의 변수를 하나의 이름으로 묶어서 관리할 수 있는 데이터 포맷 형태</li>
+</ul>
+<h2 id="리스트-자료형">리스트 자료형</h2>
+<ul>
+<li>데이터를 연속적인 공간에 저장하는 자료구조, 서로 다른 자료형도 저장할 수 있습니다.</li>
+<li>리스트에 각 요소는 쉼표로 구분, 대괄호(<code>[]</code>)로 감싸서 표현합니다</li>
+</ul>
+<h3 id="리스트-연산">리스트 연산</h3>
+<ul>
+<li>덧셈기호(<code>+</code>)를 사용하여 리스트 연결 연산을 수행할 수 있다.</li>
+<li>곱셈기호(<code>*</code>)를 사용하여 리스트를 반복하는 연산을 수행할 수 있다.
+<ul>
+<li>리스트<em>정수, 정수</em>리스트 형태로 사용할 수 있다.</li>
+</ul>
+</li>
+<li>len함수(<code>len()</code>)를 사용하여 리스트에 길이를 구할 수 있다.</li>
+</ul>
+<h3 id="리스트-인덱싱과-슬라이싱">리스트 인덱싱과 슬라이싱</h3>
+<h4 id="리스트-인덱싱">리스트 인덱싱</h4>
+<ul>
+<li>인덱싱(indexing): 수많은 데이터중 원하는 항목을 쉽게 찾도록 &lsquo;가리키는 것&rsquo;</li>
+<li>⭐인덱스 번호는 0부터 시작</li>
+<li>뒤에서부터 읽기 위해서 마이너스 기호를 사용, 이때 뒤에서부터 첫 번째값은 인덱스<code>-1</code>로 표현한다.</li>
+</ul>
+<h4 id="리스트-슬라이싱">리스트 슬라이싱</h4>
+<ul>
+<li>슬라이싱(slicing): 인덱스를 사용하여 수많은 데이터 중 원하는 항목을 <code>잘라내는 것</code></li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="n">변수명</span><span class="p">[</span><span class="n">시작</span> <span class="n">인덱스</span> <span class="n">번호</span><span class="p">:</span><span class="n">끝</span> <span class="n">인덱스</span> <span class="n">번호</span><span class="p">]</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>시작 인덱스 번호에 해당하는 값부터 잘라내며, 끝 인덱스 번호는 포함하지 않음</li>
+<li>시작 인덱스 번호 생략: 리스트에 시작 ~ 끝 인덱스 번호 전</li>
+<li>끝 인덱스 번호 생략: 시작 인덱스 번호 ~ 리스트의 끝</li>
+<li>시작과 끝의 인덱스 번호를 모두 생략: 리스트의 시작 ~ 리스트의 끝</li>
+</ul>
+<h4 id="리스트-수정하기">리스트 수정하기</h4>
+<ul>
+<li>문자열은 immutable 타입이기 때문에 인덱싱으로 값을 수정할 수 없지만, 리스트는 인덱싱과 슬라이싱을 사용하여 수정 할 수 있다.</li>
+<li>리스트의 기존 요소를 빈칸으로 수정함으로써 요소를 삭제할 수 있으며, dle 키워드를 사용하여 삭제할 수 있다.</li>
+</ul>
+<h3 id="리스트-함수">리스트 함수</h3>
+<ul>
+<li>문자열과 마찬가지로 리스트 변수 이름 뒤에 <code>.</code>을 붙여 함수를 호출하는 방식으로 사용한다.</li>
+<li>함수의 종류</li>
 </ul>
 <div class="table-wrapper"><table>
 <thead>
 <tr>
-<th>자료형</th>
-<th>값</th>
-<th>참/거짓</th>
+<th style="text-align:center">종류</th>
+<th style="text-align:center">함수</th>
+<th style="text-align:center">설명</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>숫자형</td>
-<td>0이 아닌수</td>
-<td>True</td>
+<td style="text-align:center">요소 추가</td>
+<td style="text-align:center">append(x)</td>
+<td style="text-align:center">리스트 맨 뒤에 요소 x 추가</td>
 </tr>
 <tr>
-<td>숫자형</td>
-<td>0</td>
-<td>False</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">insert(x,y)</td>
+<td style="text-align:center">인덱스 x 위치에 y를 추가</td>
 </tr>
 <tr>
-<td>문자열</td>
-<td>&lsquo;hello&rsquo;</td>
-<td>True</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">extend(x)</td>
+<td style="text-align:center">리스트 맨 뒤에 리스트 x를 추가</td>
 </tr>
 <tr>
-<td>문자열</td>
-<td>''</td>
-<td>False</td>
+<td style="text-align:center">요소 삭제</td>
+<td style="text-align:center">remove(x)</td>
+<td style="text-align:center">가장 처음 나오는 x를 찾아 삭제, 없으면 오류 발생</td>
 </tr>
 <tr>
-<td>리스트</td>
-<td>[1,2,3]</td>
-<td>True</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">pop()</td>
+<td style="text-align:center">리스트 마지막 요소를 반환 후 삭제</td>
 </tr>
 <tr>
-<td>리스트</td>
-<td>[]</td>
-<td>False</td>
+<td style="text-align:center">요소 배열</td>
+<td style="text-align:center">sort()</td>
+<td style="text-align:center">리스트 요소를 정렬</td>
 </tr>
 <tr>
-<td>튜플</td>
-<td>()</td>
-<td>False</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">reverse()</td>
+<td style="text-align:center">리스트를 역순으로 뒤집기</td>
 </tr>
 <tr>
-<td>딕셔너리</td>
-<td>{}</td>
-<td>False</td>
+<td style="text-align:center">리스트 정보</td>
+<td style="text-align:center">index(x)</td>
+<td style="text-align:center">x를 찾아 인덱스 값을 반환, 없다면 오류 발생</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center">count(x)</td>
+<td style="text-align:center">리스트 내 x의 개수 반환</td>
 </tr>
 </tbody>
 </table></div>
-<h2 id="문자열-자료형">문자열 자료형</h2>
 <ul>
-<li>문자열(string)이란 연속된 문자들의 나열</li>
-<li>따옴표(큰따옴표, 작은 따옴표) 1개 혹은 3개로 감싸져서 표현된 문자와 단어의 묶음</li>
-<li>자세한건 입출력문에서 다룰 예정입니다.</li>
+<li>빈 리스트에 값을 초기화하지 않은 상태에서는 인덱스를 사용하여 요소에 접근할 수 없다.</li>
+<li>빈 리스트에 새로운 요소를 추가하기 위해서는 append 함수를 사용해야 하며, 여러 개의 요소를 한 번에 추가하려는 경우 extend 함수를 사용할 수 있다.</li>
 </ul>
+<h2 id="튜플-자료형">튜플 자료형</h2>
+<ul>
+<li>몇가지의 다른 점을 제외하면 리스트와 거의 비슷한 자료형이다.</li>
+<li>아래 몇가지 차이점이 있다
+<ul>
+<li>리스트는 [], 튜플은 ()으로 둘러싼다.</li>
+<li>리스트는 요솟값의 생성, 삭제, 수정이 가능하지만, 튜플은 요솟값을 바꿀 수 없다.</li>
+</ul>
+</li>
+</ul>
+<h3 id="튜플-연산-1">튜플 연산 <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></h3>
+<ul>
+<li>덧셈기호(<code>+</code>)를 사용하여 튜플 연결 연산을 수행할 수 있다.</li>
+<li>곱셈기호(<code>*</code>)를 사용하여 튜플을 반복하는 연산을 수행할 수 있다.
+<ul>
+<li>리스트<em>튜플, 정수</em>튜플 형태로 사용할 수 있다.</li>
+</ul>
+</li>
+<li>len함수(<code>len()</code>)를 사용하여 리스트에 길이를 구할 수 있다.</li>
+</ul>
+<h3 id="튜플-인덱싱과-슬라이싱-1">튜플 인덱싱과 슬라이싱 <sup id="fnref1:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></h3>
+<ul>
+<li>문자열과 리스트의 인덱싱, 슬라이싱과 동일하게 사용할 수 있다.</li>
+</ul>
+<h2 id="딕셔너리-자료형">딕셔너리 자료형</h2>
+<ul>
+<li>KEY와 VALUE를 한쌍으로 가지며 대응관계를 나타내는 자료형이다.</li>
+<li>요소값에 대한 순서가 없으며 <code>&quot;Key: Value&quot;</code>의 형태로 값을 저장하요 Ket를 통해 Value를 얻을 수 있다.</li>
+<li>쌍을 이루는 각 요소는 쉼표로 구분하며 중괄호(<code>{}</code>)로 감싸서 표현한다.</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">dic</span> <span class="o">=</span> <span class="p">{</span><span class="n">key1</span><span class="p">:</span><span class="n">value1</span><span class="p">,</span><span class="n">key2</span><span class="p">:</span><span class="n">value2</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="n">dic</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">key1</span><span class="o">=</span><span class="n">value1</span><span class="p">,</span><span class="n">key2</span><span class="o">=</span><span class="n">value2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">dic</span> <span class="o">=</span> <span class="p">{}</span> <span class="c1">#비어있는 딕셔너리</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>-주의 사항 -
+<ul>
+<li>딕셔너리의 Key에 리스트를 사용할 수 없다.</li>
+<li>value에는 어떤 값이든 사용할 수 있다.</li>
+<li>Key는 Value를 찾기 위한 유일한 값이므로 중복을 사용할 경우 하나를 제외한 나머지 요소는 무시된다.</li>
+</ul>
+</li>
+</ul>
+<h3 id="요소추가-수정-삭제">요소추가, 수정, 삭제</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">딕셔너리</span> <span class="n">이름</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span> <span class="c1">#딕셔너리에 값 추가</span>
+</span></span><span class="line"><span class="cl"><span class="k">del</span> <span class="n">딕셔너리</span> <span class="n">이름</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="c1">#{key:value} 쌍 삭제</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="딕셔너리-함수">딕셔너리 함수</h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>함수</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>keys</td>
+<td>key만 모아서 dict_keys 객채 형태로 리턴</td>
+</tr>
+<tr>
+<td>values</td>
+<td>value만 모아서 dict_values 객채 형태로 리턴</td>
+</tr>
+<tr>
+<td>item</td>
+<td>key,value 쌍을 튜플로 묶어 dict_items 객채 형태로 리턴</td>
+</tr>
+<tr>
+<td>clear</td>
+<td>key:value 쌍 모두 지우기</td>
+</tr>
+<tr>
+<td>get(key)</td>
+<td>key로 value 얻기</td>
+</tr>
+<tr>
+<td>key in x</td>
+<td>key가 딕셔너리 x안에 있는지 조사하여 True/False 반환</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="집합-자료형">집합 자료형</h2>
+<ul>
+<li>집합의 특징을 그대로 구현하여 집합에 관련된 것을 쉽게 처리하기 위한 자료형</li>
+<li>집합의 각 요소는 쉼표로 구현하고 <code>{}</code>로 감싸서 표현한다.</li>
+<li>요소의 순서가 없고 그로인해 인덱싱과 슬라이싱을 사용할 수 없다.</li>
+<li>중복되는 값은 한 개만 저장하기 때문에 리스트 혹은 집합은 집합의 원소가 될 수 없다.</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">집합</span> <span class="n">이름</span> <span class="o">=</span> <span class="p">{</span><span class="n">요소1</span><span class="p">,</span><span class="n">요소2</span><span class="p">,</span> <span class="o">...</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="n">집합</span> <span class="n">이름</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">묶음</span> <span class="n">자료형</span><span class="p">)</span><span class="c1">#문자열,리스트, 튜플을 집합으로 변경</span>
+</span></span><span class="line"><span class="cl"><span class="n">집합</span> <span class="n">이름</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="집합-연산과-함수">집합 연산과 함수</h3>
+<ul>
+<li>종류</li>
+</ul>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>연산</th>
+<th>설명</th>
+<th>사용 구문</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>교집합</td>
+<td>집합에 공통으로 들어 있는 원소의 집합</td>
+<td>&amp; ,intersection()</td>
+</tr>
+<tr>
+<td>합집합</td>
+<td>적어도 한 집합에 들어 있는 원소의 집합</td>
+<td>| ,union()</td>
+</tr>
+<tr>
+<td>차집합</td>
+<td>A에 대한 B의 차집합(A-B)은 A의 속하고 B에는 속하지 않는 원소의 집합</td>
+<td>- ,difference()</td>
+</tr>
+</tbody>
+</table></div>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>함수</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>add(x)</td>
+<td>x 값 추가</td>
+</tr>
+<tr>
+<td>update(묶음 자료형)</td>
+<td>묶음 자료형 내 여러개의 요소 추가</td>
+</tr>
+<tr>
+<td>remove(x)</td>
+<td>x의 값 삭제</td>
+</tr>
+</tbody>
+</table></div>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>그냥 리스트랑 똑같다&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref1:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
 
 </section>
 
@@ -540,7 +693,7 @@
 
 
         <span>
-            마지막 수정:  Apr 44, 111150 46:117 UTC
+            마지막 수정:  Apr 44, 121248 46:127 UTC
         </span>
     </section></footer>
 
@@ -559,23 +712,23 @@
             
                 
 <article class="has-image">
-    <a href="/p/simple_python2/">
+    <a href="/p/simple_python1/">
         
         
             <div class="article-image">
-                <img src="/p/simple_python2/thumb.3b0892711d7711382d9e42bf4e1860d1_hu6ce46be598242d68941202901d39eb59_93419_250x150_fill_box_smart1_3.png" 
+                <img src="/p/simple_python1/thumb.3b0892711d7711382d9e42bf4e1860d1_hu6ce46be598242d68941202901d39eb59_93419_250x150_fill_box_smart1_3.png" 
                         width="250" 
                         height="150" 
                         loading="lazy"
-                        alt="Featured image of post python 기초문법2"
-                        data-key="simple_python2" 
+                        alt="Featured image of post python 기초문법1"
+                        data-key="simple_python1" 
                         data-hash="md5-OwiScR13ETgtnkK/Thhg0Q==">
                 
             </div>
         
 
         <div class="article-details">
-            <h2 class="article-title">python 기초문법2</h2>
+            <h2 class="article-title">python 기초문법1</h2>
         </div>
     </a>
 </article>
