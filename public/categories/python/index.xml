@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Python on wntjd</title>
-        <link>http://localhost:1313/categories/python/</link>
+        <link>https://blog.wntjd.kr/categories/python/</link>
         <description>Recent content in Python on wntjd</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Fri, 12 Apr 2024 00:48:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/python/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 12 Apr 2024 00:48:00 +0000</lastBuildDate><atom:link href="https://blog.wntjd.kr/categories/python/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>python 기초문법2</title>
-        <link>http://localhost:1313/p/simple_python2/</link>
+        <link>https://blog.wntjd.kr/p/simple_python2/</link>
         <pubDate>Fri, 12 Apr 2024 00:48:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/simple_python2/</guid>
-        <description>&lt;img src="http://localhost:1313/p/simple_python2/thumb.png" alt="Featured image of post python 기초문법2" /&gt;&lt;h1 id=&#34;python의-자료형&#34;&gt;python의 자료형&lt;/h1&gt;
+        <guid>https://blog.wntjd.kr/p/simple_python2/</guid>
+        <description>&lt;img src="https://blog.wntjd.kr/p/simple_python2/thumb.png" alt="Featured image of post python 기초문법2" /&gt;&lt;h1 id=&#34;python의-자료형&#34;&gt;python의 자료형&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;파이썬은 자동으로 자료형을 추론해 주지만, 프로그램을 만들때 어떤 자료를 저장할 것인지 알고 있는 것은 매우 중요합니다.&lt;/li&gt;
 &lt;li&gt;파이썬의 자료형은 크게 데이터형과 컨테이너형으로 구분할 수 있습니다. 오늘은 컨테이너형만 다룰 것입니다.&lt;/li&gt;
@@ -311,11 +311,11 @@
         </item>
         <item>
         <title>python 기초문법1</title>
-        <link>http://localhost:1313/p/simple_python1/</link>
+        <link>https://blog.wntjd.kr/p/simple_python1/</link>
         <pubDate>Thu, 11 Apr 2024 12:50:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/simple_python1/</guid>
-        <description>&lt;img src="http://localhost:1313/p/simple_python1/thumb.png" alt="Featured image of post python 기초문법1" /&gt;&lt;h1 id=&#34;python의-자료형&#34;&gt;python의 자료형&lt;/h1&gt;
+        <guid>https://blog.wntjd.kr/p/simple_python1/</guid>
+        <description>&lt;img src="https://blog.wntjd.kr/p/simple_python1/thumb.png" alt="Featured image of post python 기초문법1" /&gt;&lt;h1 id=&#34;python의-자료형&#34;&gt;python의 자료형&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;파이썬은 자동으로 자료형을 추론해 주지만, 프로그램을 만들때 어떤 자료를 저장할 것인지 알고 있는 것은 매우 중요합니다.&lt;/li&gt;
 &lt;li&gt;파이썬의 자료형은 크게 데이터형과 컨테이너형으로 구분할 수 있습니다. 오늘은 데이터형만 다룰 것입니다.&lt;/li&gt;
@@ -482,11 +482,11 @@
         </item>
         <item>
         <title>python이란?</title>
-        <link>http://localhost:1313/p/about_python/</link>
+        <link>https://blog.wntjd.kr/p/about_python/</link>
         <pubDate>Thu, 11 Apr 2024 06:04:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/about_python/</guid>
-        <description>&lt;img src="http://localhost:1313/p/about_python/thumb.png" alt="Featured image of post python이란?" /&gt;&lt;h1 id=&#34;python이란&#34;&gt;python이란?&lt;/h1&gt;
+        <guid>https://blog.wntjd.kr/p/about_python/</guid>
+        <description>&lt;img src="https://blog.wntjd.kr/p/about_python/thumb.png" alt="Featured image of post python이란?" /&gt;&lt;h1 id=&#34;python이란&#34;&gt;python이란?&lt;/h1&gt;
 &lt;p&gt;암스테르담의 &lt;a class=&#34;link&#34; href=&#34;https://github.com/gvanrossum&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;귀도 반 로섬(Guido van rossum)&lt;/a&gt;이 개발한 인터프리터 언어&lt;/p&gt;
 &lt;h2 id=&#34;python-install&#34;&gt;python install&lt;/h2&gt;
