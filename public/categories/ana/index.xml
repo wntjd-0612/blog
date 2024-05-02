@@ -2,17 +2,79 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Ana on wntjd</title>
-        <link>http://localhost:1313/categories/ana/</link>
+        <link>https://blog.wntjd.kr/categories/ana/</link>
         <description>Recent content in Ana on wntjd</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Fri, 12 Apr 2024 06:48:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/ana/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>백준 1005</title>
-        <link>http://localhost:1313/p/baekjoon_1005/</link>
-        <pubDate>Fri, 12 Apr 2024 06:48:00 +0000</pubDate>
+        <lastBuildDate>Thu, 02 May 2024 00:48:00 +0000</lastBuildDate><atom:link href="https://blog.wntjd.kr/categories/ana/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>python 기초문법3</title>
+        <link>https://blog.wntjd.kr/p/simple_python3/</link>
+        <pubDate>Thu, 02 May 2024 00:48:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/baekjoon_1005/</guid>
-        <description>&lt;img src="http://localhost:1313/p/baekjoon_1005/thumb.png" alt="Featured image of post 백준 1005" /&gt;&lt;h1 id=&#34;acm-craft&#34;&gt;ACM Craft&lt;/h1&gt;
+        <guid>https://blog.wntjd.kr/p/simple_python3/</guid>
+        <description>&lt;img src="https://blog.wntjd.kr/p/simple_python3/thumb.png" alt="Featured image of post python 기초문법3" /&gt;&lt;h2 id=&#34;python-입출력문&#34;&gt;python 입출력문&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;python()&lt;/code&gt;함수는 마지막 데이터에서 뒤에 줄 바꿈 문자를 포함한디.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-py&#34; data-lang=&#34;py&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;a&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;b&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;이를 무시하기 위해서는&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-py&#34; data-lang=&#34;py&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;a&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;end&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;b&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;을 통해서 무시할 수 있다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;print() 함수에서 여러줄을 출력할 때는 따옴표를 연속으로 3개 사용하여 여러줄에 해당하는 문자영을 한번에 담거나 &lt;code&gt;\n&lt;/code&gt;을 사용하여 줄바꿈을 해줄 수 있다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;python-변수&#34;&gt;python 변수&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;데이터를 저장하는 공간을 의미하며, 변하는 값을 저장할 수 있어서 &lt;code&gt;변수&lt;/code&gt;라고 한다.&lt;/li&gt;
+&lt;li&gt;변수에 이름을 붙인 것을 변수명이라고 하며 변수 이름으로 한글을 사용할수 있다.&lt;/li&gt;
+&lt;li&gt;파이썬은 변수의 이름을 적어 주는 것만으로 변수를 선언할 수 있으며, 자료형을 명시하지 않아도 저장되는 값에 따라 자료형(데이터 타입)을 자동으로 추론한다.&lt;/li&gt;
+&lt;li&gt;대입 연산자를 통해 변수에 값을 할당할 수 있으며, 이를 초기화라고 한다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;python-입력변수&#34;&gt;python 입력변수&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;input()&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;input() 함수는 입력받은 값을 문자열로 저장한다.&lt;/li&gt;
+&lt;li&gt;입력받은 값으로 산술 연산을 하기 위해서는 해당 값을 정수형(int)로 혹은 실수(float)으로 변화해야 한다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;a=input()
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;print(type(a))
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;a=int(input())
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;print(type(a))
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+        </item>
+        <item>
+        <title>백준 1005</title>
+        <link>https://blog.wntjd.kr/p/baekjoon_1005/</link>
+        <pubDate>Tue, 16 Apr 2024 06:48:00 +0000</pubDate>
+        
+        <guid>https://blog.wntjd.kr/p/baekjoon_1005/</guid>
+        <description>&lt;img src="https://blog.wntjd.kr/p/baekjoon_1005/thumb.png" alt="Featured image of post 백준 1005" /&gt;&lt;h1 id=&#34;acm-craft&#34;&gt;ACM Craft&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.acmicpc.net/problem/1005&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;문제&lt;/a&gt;&lt;/li&gt;
@@ -102,11 +164,11 @@
         </item>
         <item>
         <title>백준 9461</title>
-        <link>http://localhost:1313/p/baekjoon_9461/</link>
+        <link>https://blog.wntjd.kr/p/baekjoon_9461/</link>
         <pubDate>Fri, 12 Apr 2024 06:48:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/baekjoon_9461/</guid>
-        <description>&lt;img src="http://localhost:1313/p/baekjoon_9461/thumb.png" alt="Featured image of post 백준 9461" /&gt;&lt;h1 id=&#34;대피소&#34;&gt;대피소&lt;/h1&gt;
+        <guid>https://blog.wntjd.kr/p/baekjoon_9461/</guid>
+        <description>&lt;img src="https://blog.wntjd.kr/p/baekjoon_9461/thumb.png" alt="Featured image of post 백준 9461" /&gt;&lt;h1 id=&#34;대피소&#34;&gt;대피소&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.acmicpc.net/problem/9461&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;문제&lt;/a&gt;&lt;/li&gt;
@@ -199,11 +261,11 @@
         </item>
         <item>
         <title>백준 28215</title>
-        <link>http://localhost:1313/p/baekjoon_28215/</link>
+        <link>https://blog.wntjd.kr/p/baekjoon_28215/</link>
         <pubDate>Fri, 12 Apr 2024 03:48:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/baekjoon_28215/</guid>
-        <description>&lt;img src="http://localhost:1313/p/baekjoon_28215/thumb.png" alt="Featured image of post 백준 28215" /&gt;&lt;h1 id=&#34;대피소&#34;&gt;대피소&lt;/h1&gt;
+        <guid>https://blog.wntjd.kr/p/baekjoon_28215/</guid>
+        <description>&lt;img src="https://blog.wntjd.kr/p/baekjoon_28215/thumb.png" alt="Featured image of post 백준 28215" /&gt;&lt;h1 id=&#34;대피소&#34;&gt;대피소&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.acmicpc.net/problem/28215&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;이 문제&lt;/a&gt;는 2023년 정보올림피아드 1차 초등부 2번, 고등부 1번으로 출제된 문제 입니다.&lt;/li&gt;
@@ -279,11 +341,11 @@
         </item>
         <item>
         <title>python 기초문법2</title>
-        <link>http://localhost:1313/p/simple_python2/</link>
+        <link>https://blog.wntjd.kr/p/simple_python2/</link>
         <pubDate>Fri, 12 Apr 2024 00:48:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/simple_python2/</guid>
-        <description>&lt;img src="http://localhost:1313/p/simple_python2/thumb.png" alt="Featured image of post python 기초문법2" /&gt;&lt;h1 id=&#34;python의-자료형&#34;&gt;python의 자료형&lt;/h1&gt;
+        <guid>https://blog.wntjd.kr/p/simple_python2/</guid>
+        <description>&lt;img src="https://blog.wntjd.kr/p/simple_python2/thumb.png" alt="Featured image of post python 기초문법2" /&gt;&lt;h1 id=&#34;python의-자료형&#34;&gt;python의 자료형&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;파이썬은 자동으로 자료형을 추론해 주지만, 프로그램을 만들때 어떤 자료를 저장할 것인지 알고 있는 것은 매우 중요합니다.&lt;/li&gt;
 &lt;li&gt;파이썬의 자료형은 크게 데이터형과 컨테이너형으로 구분할 수 있습니다. 오늘은 컨테이너형만 다룰 것입니다.&lt;/li&gt;
@@ -582,11 +644,11 @@
         </item>
         <item>
         <title>python 기초문법1</title>
-        <link>http://localhost:1313/p/simple_python1/</link>
+        <link>https://blog.wntjd.kr/p/simple_python1/</link>
         <pubDate>Thu, 11 Apr 2024 12:50:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/simple_python1/</guid>
-        <description>&lt;img src="http://localhost:1313/p/simple_python1/thumb.png" alt="Featured image of post python 기초문법1" /&gt;&lt;h1 id=&#34;python의-자료형&#34;&gt;python의 자료형&lt;/h1&gt;
+        <guid>https://blog.wntjd.kr/p/simple_python1/</guid>
+        <description>&lt;img src="https://blog.wntjd.kr/p/simple_python1/thumb.png" alt="Featured image of post python 기초문법1" /&gt;&lt;h1 id=&#34;python의-자료형&#34;&gt;python의 자료형&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;파이썬은 자동으로 자료형을 추론해 주지만, 프로그램을 만들때 어떤 자료를 저장할 것인지 알고 있는 것은 매우 중요합니다.&lt;/li&gt;
 &lt;li&gt;파이썬의 자료형은 크게 데이터형과 컨테이너형으로 구분할 수 있습니다. 오늘은 데이터형만 다룰 것입니다.&lt;/li&gt;
@@ -753,11 +815,11 @@
         </item>
         <item>
         <title>python이란?</title>
-        <link>http://localhost:1313/p/about_python/</link>
+        <link>https://blog.wntjd.kr/p/about_python/</link>
         <pubDate>Thu, 11 Apr 2024 06:04:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/about_python/</guid>
-        <description>&lt;img src="http://localhost:1313/p/about_python/thumb.png" alt="Featured image of post python이란?" /&gt;&lt;h1 id=&#34;python이란&#34;&gt;python이란?&lt;/h1&gt;
+        <guid>https://blog.wntjd.kr/p/about_python/</guid>
+        <description>&lt;img src="https://blog.wntjd.kr/p/about_python/thumb.png" alt="Featured image of post python이란?" /&gt;&lt;h1 id=&#34;python이란&#34;&gt;python이란?&lt;/h1&gt;
 &lt;p&gt;암스테르담의 &lt;a class=&#34;link&#34; href=&#34;https://github.com/gvanrossum&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;귀도 반 로섬(Guido van rossum)&lt;/a&gt;이 개발한 인터프리터 언어&lt;/p&gt;
 &lt;h2 id=&#34;python-install&#34;&gt;python install&lt;/h2&gt;
