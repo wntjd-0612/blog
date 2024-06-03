@@ -2,17 +2,182 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Posts on wntjd</title>
-        <link>https://blog.wntjd.kr/post/</link>
+        <link>http://localhost:1313/post/</link>
         <description>Recent content in Posts on wntjd</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Thu, 02 May 2024 00:48:00 +0000</lastBuildDate><atom:link href="https://blog.wntjd.kr/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 02 May 2024 00:50:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>python 기초문법4</title>
+        <link>http://localhost:1313/p/simple_python4/</link>
+        <pubDate>Thu, 02 May 2024 00:50:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/p/simple_python4/</guid>
+        <description>&lt;img src="http://localhost:1313/p/simple_python4/thumb.png" alt="Featured image of post python 기초문법4" /&gt;&lt;h1 id=&#34;문자열&#34;&gt;문자열&lt;/h1&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://blog.wntjd.kr/p/simple_python2/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;지난 시간&lt;/a&gt;에 배웠던 내용인 문자열에 대해서 자세히 알아보자&lt;/p&gt;
+&lt;h1 id=&#34;문자열-자료형&#34;&gt;문자열 자료형&lt;/h1&gt;
+&lt;h2 id=&#34;이스케이프-시퀸스escape-sequence&#34;&gt;이스케이프 시퀸스(escape sequence)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;문자열에서 표현하기 어려운 특정 문자를 백 슬레시()로 표현하는 것&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;이스케이프 시퀸스&lt;/th&gt;
+&lt;th&gt;의미&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;\n&lt;/td&gt;
+&lt;td&gt;개행(엔터)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\b&lt;/td&gt;
+&lt;td&gt;백스페이스(글자 하나를 지움)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\t&lt;/td&gt;
+&lt;td&gt;탭&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\&#39;&lt;/td&gt;
+&lt;td&gt;작은 따옴표&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\&amp;quot;&lt;/td&gt;
+&lt;td&gt;큰 따옴표&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\\&lt;/td&gt;
+&lt;td&gt;백 슬레시 문자&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;문자열-연산&#34;&gt;문자열 연산&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;문자열 연산하기 (Concatenation)
+&lt;ul&gt;
+&lt;li&gt;덧셈부호(+)를 이용하여 문자열 연결 연산 수행 가능&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;문자열 반복하기
+&lt;ul&gt;
+&lt;li&gt;곱셈 부호(*)를 이용하여 문자열을 반복하는 연산 수행 가능&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;문자열 * 정수&lt;/code&gt; &lt;code&gt;정수 * 문자열&lt;/code&gt;의 형태로 사용&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;문자열-포매팅&#34;&gt;문자열 포매팅&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;포매팅(Formatting) : 사용자가 문자열의 &lt;code&gt;포맷을 지정하는 것&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;문자열에 포함된 값이 계속해서 변경될 경우, 변수와 포매팅을 이용하여 가독성을 높일 수 있다.&lt;/li&gt;
+&lt;li&gt;문자열 안에 포맷 코드를 입력한 뒤, 가장 뒤에 &lt;code&gt;%&lt;/code&gt;와 함께 대응하는 값을 써준다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;포맷 코드에 대응하는 값이 올바르게 연결되어야 하며, 포맷 코드와 대응되는 개수가 같아야 함 &lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;문자열 포맷 코드&lt;/li&gt;
+&lt;li&gt;| 코드  | 설명                 |
+|&amp;mdash;&amp;ndash;|&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;|
+| %s  | 문자열(stirng)        |
+| %c  | 문자 1개 (character)  |
+| %d  | 정수(integer)        |
+| %f  | 실수(floating-point) |
+| %%  | %자체를 출력            |&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;format-함수를-사용한-포매팅&#34;&gt;format 함수를 사용한 포매팅&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;문자열 내에 {name1},{name2}, ..와 같은 형태로 이름을 붙여 사용하고, format 함수에 이름에 해당하는 입력값을 넣어주면 대응하는 값으로 바뀌어 출력한다&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;f를-이용한-포매팅&#34;&gt;f를 이용한 포매팅&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-py&#34; data-lang=&#34;py&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;sa&#34;&gt;f&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;asf&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;이다&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;문자열-함수&#34;&gt;문자열 함수&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;문자열 자료형이 자체적으로 가지고 있는 내장함수를 사용할 수 있다.&lt;/li&gt;
+&lt;li&gt;문자열 변구 이름 뒤에 .을 붙인 다음 함수를 호출하는 방식으러 사용한다.&lt;/li&gt;
+&lt;li&gt;함수의 종류
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;함수&lt;/th&gt;
+&lt;th&gt;설명&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;count()&lt;/td&gt;
+&lt;td&gt;전달인자와 같은 문자의 개수를 반환&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;find()&lt;/td&gt;
+&lt;td&gt;전달인자를 찾아 인덱스 값을 반환, 없다면 -1반환&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;index()&lt;/td&gt;
+&lt;td&gt;전달인자를 찾아 인덱스 값을 반환, 없다면 오류 반환&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;join()&lt;/td&gt;
+&lt;td&gt;전달인자 사이에 문자열을 삽입&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;upper()&lt;/td&gt;
+&lt;td&gt;소문자를 대문자로 바꾸기&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;lower()&lt;/td&gt;
+&lt;td&gt;대문자를 소문자로 바꾸기&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;lstrip()&lt;/td&gt;
+&lt;td&gt;가장 왼쪽에 있는 공백 모두 지우기&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;rstrip()&lt;/td&gt;
+&lt;td&gt;가장 오른쪽에 있는 공백 모두 지우기&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;replace()&lt;/td&gt;
+&lt;td&gt;문자열 안의 특정한 값을 다른 값으로 치환&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;split()&lt;/td&gt;
+&lt;td&gt;전달인자 기준으로 문자열을 나눠 리스트로 반환&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;odd()&lt;/td&gt;
+&lt;td&gt;문자에 대응하는 아스키코드 값을 반환&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;chr()&lt;/td&gt;
+&lt;td&gt;아스키코드 값에 대응하는 문자를 반환&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
         <title>python 기초문법3</title>
-        <link>https://blog.wntjd.kr/p/simple_python3/</link>
+        <link>http://localhost:1313/p/simple_python3/</link>
         <pubDate>Thu, 02 May 2024 00:48:00 +0000</pubDate>
         
-        <guid>https://blog.wntjd.kr/p/simple_python3/</guid>
-        <description>&lt;img src="https://blog.wntjd.kr/p/simple_python3/thumb.png" alt="Featured image of post python 기초문법3" /&gt;&lt;h2 id=&#34;python-입출력문&#34;&gt;python 입출력문&lt;/h2&gt;
+        <guid>http://localhost:1313/p/simple_python3/</guid>
+        <description>&lt;img src="http://localhost:1313/p/simple_python3/thumb.png" alt="Featured image of post python 기초문법3" /&gt;&lt;h2 id=&#34;python-입출력문&#34;&gt;python 입출력문&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;python()&lt;/code&gt;함수는 마지막 데이터에서 뒤에 줄 바꿈 문자를 포함한디.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -66,15 +231,140 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;print(type(a))
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description>
+&lt;/div&gt;&lt;h2 id=&#34;연산자&#34;&gt;연산자&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;변수나 값의 연산을 위해 사용하는 것으로 프로그램의 목적에 따라 산술 연산자, 비교 연산자, 논리 연산자 등을 위해 사용할 수 있다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;종류&lt;/th&gt;
+&lt;th&gt;연산자&lt;/th&gt;
+&lt;th&gt;역할&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;산술 연산자&lt;/td&gt;
+&lt;td&gt;+&lt;/td&gt;
+&lt;td&gt;덧셈&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;td&gt;뺄셈&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;*&lt;/td&gt;
+&lt;td&gt;곱샘&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;/&lt;/td&gt;
+&lt;td&gt;나눗셈&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;//&lt;/td&gt;
+&lt;td&gt;니누었을 때의 몫&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;%&lt;/td&gt;
+&lt;td&gt;나누었을 때의 나머지&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;**&lt;/td&gt;
+&lt;td&gt;거듭제곱&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;비교 연산자&lt;/td&gt;
+&lt;td&gt;&amp;gt;&lt;/td&gt;
+&lt;td&gt;크다&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&amp;gt;=&lt;/td&gt;
+&lt;td&gt;크거나 같다&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&amp;lt;&lt;/td&gt;
+&lt;td&gt;작다&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&amp;lt;=&lt;/td&gt;
+&lt;td&gt;작거나 같다&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;==&lt;/td&gt;
+&lt;td&gt;같다&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;!=&lt;/td&gt;
+&lt;td&gt;같지 않다&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;논리 연산자&lt;/td&gt;
+&lt;td&gt;and&lt;/td&gt;
+&lt;td&gt;두 값이 모두 True일 때만 True&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;or&lt;/td&gt;
+&lt;td&gt;두 값 중 하나라도 True라면 True라면 True&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;not&lt;/td&gt;
+&lt;td&gt;False면 True &lt;br&gt; True면 False&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;대입 연산자&lt;/td&gt;
+&lt;td&gt;=&lt;/td&gt;
+&lt;td&gt;오른쪽의 값을 왼쪽애 대입&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;+=,-=,*=.-,/=&lt;/td&gt;
+&lt;td&gt;두 값 중 하나라도 True라면 True라면 True&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;비트 연산자&lt;/td&gt;
+&lt;td&gt;&amp;amp;&lt;/td&gt;
+&lt;td&gt;비트 단위 AND 연산&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;|&lt;/td&gt;
+&lt;td&gt;비트 단위 OR 연산&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;^&lt;/td&gt;
+&lt;td&gt;비트 단위 XOR 연산&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;~&lt;/td&gt;
+&lt;td&gt;비트를 보수 연산&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
         </item>
         <item>
         <title>백준 1005</title>
-        <link>https://blog.wntjd.kr/p/baekjoon_1005/</link>
+        <link>http://localhost:1313/p/baekjoon_1005/</link>
         <pubDate>Tue, 16 Apr 2024 06:48:00 +0000</pubDate>
         
-        <guid>https://blog.wntjd.kr/p/baekjoon_1005/</guid>
-        <description>&lt;img src="https://blog.wntjd.kr/p/baekjoon_1005/thumb.png" alt="Featured image of post 백준 1005" /&gt;&lt;h1 id=&#34;acm-craft&#34;&gt;ACM Craft&lt;/h1&gt;
+        <guid>http://localhost:1313/p/baekjoon_1005/</guid>
+        <description>&lt;img src="http://localhost:1313/p/baekjoon_1005/thumb.png" alt="Featured image of post 백준 1005" /&gt;&lt;h1 id=&#34;acm-craft&#34;&gt;ACM Craft&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.acmicpc.net/problem/1005&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;문제&lt;/a&gt;&lt;/li&gt;
@@ -164,11 +454,11 @@
         </item>
         <item>
         <title>백준 9461</title>
-        <link>https://blog.wntjd.kr/p/baekjoon_9461/</link>
+        <link>http://localhost:1313/p/baekjoon_9461/</link>
         <pubDate>Fri, 12 Apr 2024 06:48:00 +0000</pubDate>
         
-        <guid>https://blog.wntjd.kr/p/baekjoon_9461/</guid>
-        <description>&lt;img src="https://blog.wntjd.kr/p/baekjoon_9461/thumb.png" alt="Featured image of post 백준 9461" /&gt;&lt;h1 id=&#34;대피소&#34;&gt;대피소&lt;/h1&gt;
+        <guid>http://localhost:1313/p/baekjoon_9461/</guid>
+        <description>&lt;img src="http://localhost:1313/p/baekjoon_9461/thumb.png" alt="Featured image of post 백준 9461" /&gt;&lt;h1 id=&#34;대피소&#34;&gt;대피소&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.acmicpc.net/problem/9461&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;문제&lt;/a&gt;&lt;/li&gt;
@@ -261,11 +551,11 @@
         </item>
         <item>
         <title>백준 28215</title>
-        <link>https://blog.wntjd.kr/p/baekjoon_28215/</link>
+        <link>http://localhost:1313/p/baekjoon_28215/</link>
         <pubDate>Fri, 12 Apr 2024 03:48:00 +0000</pubDate>
         
-        <guid>https://blog.wntjd.kr/p/baekjoon_28215/</guid>
-        <description>&lt;img src="https://blog.wntjd.kr/p/baekjoon_28215/thumb.png" alt="Featured image of post 백준 28215" /&gt;&lt;h1 id=&#34;대피소&#34;&gt;대피소&lt;/h1&gt;
+        <guid>http://localhost:1313/p/baekjoon_28215/</guid>
+        <description>&lt;img src="http://localhost:1313/p/baekjoon_28215/thumb.png" alt="Featured image of post 백준 28215" /&gt;&lt;h1 id=&#34;대피소&#34;&gt;대피소&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.acmicpc.net/problem/28215&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;이 문제&lt;/a&gt;는 2023년 정보올림피아드 1차 초등부 2번, 고등부 1번으로 출제된 문제 입니다.&lt;/li&gt;
@@ -341,11 +631,11 @@
         </item>
         <item>
         <title>python 기초문법2</title>
-        <link>https://blog.wntjd.kr/p/simple_python2/</link>
+        <link>http://localhost:1313/p/simple_python2/</link>
         <pubDate>Fri, 12 Apr 2024 00:48:00 +0000</pubDate>
         
-        <guid>https://blog.wntjd.kr/p/simple_python2/</guid>
-        <description>&lt;img src="https://blog.wntjd.kr/p/simple_python2/thumb.png" alt="Featured image of post python 기초문법2" /&gt;&lt;h1 id=&#34;python의-자료형&#34;&gt;python의 자료형&lt;/h1&gt;
+        <guid>http://localhost:1313/p/simple_python2/</guid>
+        <description>&lt;img src="http://localhost:1313/p/simple_python2/thumb.png" alt="Featured image of post python 기초문법2" /&gt;&lt;h1 id=&#34;python의-자료형&#34;&gt;python의 자료형&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;파이썬은 자동으로 자료형을 추론해 주지만, 프로그램을 만들때 어떤 자료를 저장할 것인지 알고 있는 것은 매우 중요합니다.&lt;/li&gt;
 &lt;li&gt;파이썬의 자료형은 크게 데이터형과 컨테이너형으로 구분할 수 있습니다. 오늘은 컨테이너형만 다룰 것입니다.&lt;/li&gt;
@@ -644,11 +934,11 @@
         </item>
         <item>
         <title>python 기초문법1</title>
-        <link>https://blog.wntjd.kr/p/simple_python1/</link>
+        <link>http://localhost:1313/p/simple_python1/</link>
         <pubDate>Thu, 11 Apr 2024 12:50:00 +0000</pubDate>
         
-        <guid>https://blog.wntjd.kr/p/simple_python1/</guid>
-        <description>&lt;img src="https://blog.wntjd.kr/p/simple_python1/thumb.png" alt="Featured image of post python 기초문법1" /&gt;&lt;h1 id=&#34;python의-자료형&#34;&gt;python의 자료형&lt;/h1&gt;
+        <guid>http://localhost:1313/p/simple_python1/</guid>
+        <description>&lt;img src="http://localhost:1313/p/simple_python1/thumb.png" alt="Featured image of post python 기초문법1" /&gt;&lt;h1 id=&#34;python의-자료형&#34;&gt;python의 자료형&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;파이썬은 자동으로 자료형을 추론해 주지만, 프로그램을 만들때 어떤 자료를 저장할 것인지 알고 있는 것은 매우 중요합니다.&lt;/li&gt;
 &lt;li&gt;파이썬의 자료형은 크게 데이터형과 컨테이너형으로 구분할 수 있습니다. 오늘은 데이터형만 다룰 것입니다.&lt;/li&gt;
@@ -815,11 +1105,11 @@
         </item>
         <item>
         <title>python이란?</title>
-        <link>https://blog.wntjd.kr/p/about_python/</link>
+        <link>http://localhost:1313/p/about_python/</link>
         <pubDate>Thu, 11 Apr 2024 06:04:00 +0000</pubDate>
         
-        <guid>https://blog.wntjd.kr/p/about_python/</guid>
-        <description>&lt;img src="https://blog.wntjd.kr/p/about_python/thumb.png" alt="Featured image of post python이란?" /&gt;&lt;h1 id=&#34;python이란&#34;&gt;python이란?&lt;/h1&gt;
+        <guid>http://localhost:1313/p/about_python/</guid>
+        <description>&lt;img src="http://localhost:1313/p/about_python/thumb.png" alt="Featured image of post python이란?" /&gt;&lt;h1 id=&#34;python이란&#34;&gt;python이란?&lt;/h1&gt;
 &lt;p&gt;암스테르담의 &lt;a class=&#34;link&#34; href=&#34;https://github.com/gvanrossum&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;귀도 반 로섬(Guido van rossum)&lt;/a&gt;이 개발한 인터프리터 언어&lt;/p&gt;
 &lt;h2 id=&#34;python-install&#34;&gt;python install&lt;/h2&gt;

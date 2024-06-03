@@ -2,73 +2,76 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://blog.wntjd.kr/p/simple_python3/</loc>
+    <loc>http://localhost:1313/p/simple_python4/</loc>
+    <lastmod>2024-05-02T00:50:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/p/simple_python3/</loc>
     <lastmod>2024-05-02T00:48:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.wntjd.kr/p/baekjoon_1005/</loc>
+    <loc>http://localhost:1313/p/baekjoon_1005/</loc>
     <lastmod>2024-04-16T06:48:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.wntjd.kr/p/baekjoon_9461/</loc>
+    <loc>http://localhost:1313/p/baekjoon_9461/</loc>
     <lastmod>2024-04-12T06:48:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.wntjd.kr/p/baekjoon_28215/</loc>
+    <loc>http://localhost:1313/p/baekjoon_28215/</loc>
     <lastmod>2024-04-12T03:48:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.wntjd.kr/p/simple_python2/</loc>
+    <loc>http://localhost:1313/p/simple_python2/</loc>
     <lastmod>2024-04-12T00:48:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.wntjd.kr/p/simple_python1/</loc>
+    <loc>http://localhost:1313/p/simple_python1/</loc>
     <lastmod>2024-04-11T12:50:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.wntjd.kr/p/about_python/</loc>
+    <loc>http://localhost:1313/p/about_python/</loc>
     <lastmod>2024-04-11T06:04:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.wntjd.kr/</loc>
-    <lastmod>2024-05-02T00:48:00+00:00</lastmod>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2024-05-02T00:50:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.wntjd.kr/tags/ana/</loc>
-    <lastmod>2024-05-02T00:48:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/ana/</loc>
+    <lastmod>2024-05-02T00:50:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.wntjd.kr/categories/ana/</loc>
-    <lastmod>2024-05-02T00:48:00+00:00</lastmod>
+    <loc>http://localhost:1313/categories/ana/</loc>
+    <lastmod>2024-05-02T00:50:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.wntjd.kr/tags/basic/</loc>
-    <lastmod>2024-05-02T00:48:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/basic/</loc>
+    <lastmod>2024-05-02T00:50:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.wntjd.kr/categories/</loc>
-    <lastmod>2024-05-02T00:48:00+00:00</lastmod>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2024-05-02T00:50:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.wntjd.kr/post/</loc>
-    <lastmod>2024-05-02T00:48:00+00:00</lastmod>
+    <loc>http://localhost:1313/post/</loc>
+    <lastmod>2024-05-02T00:50:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.wntjd.kr/tags/python/</loc>
-    <lastmod>2024-05-02T00:48:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/python/</loc>
+    <lastmod>2024-05-02T00:50:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.wntjd.kr/categories/python/</loc>
-    <lastmod>2024-05-02T00:48:00+00:00</lastmod>
+    <loc>http://localhost:1313/categories/python/</loc>
+    <lastmod>2024-05-02T00:50:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.wntjd.kr/tags/</loc>
-    <lastmod>2024-05-02T00:48:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-05-02T00:50:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.wntjd.kr/tags/baekjoon/</loc>
+    <loc>http://localhost:1313/tags/baekjoon/</loc>
     <lastmod>2024-04-16T06:48:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.wntjd.kr/categories/baekjoon/</loc>
+    <loc>http://localhost:1313/categories/baekjoon/</loc>
     <lastmod>2024-04-16T06:48:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.wntjd.kr/tags/install/</loc>
+    <loc>http://localhost:1313/tags/install/</loc>
     <lastmod>2024-04-11T06:04:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.wntjd.kr/archives/</loc>
+    <loc>http://localhost:1313/archives/</loc>
     <lastmod>2022-03-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.wntjd.kr/page/</loc>
+    <loc>http://localhost:1313/page/</loc>
     <lastmod>2022-03-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.wntjd.kr/categories/example-category/</loc>
+    <loc>http://localhost:1313/categories/example-category/</loc>
   </url><url>
-    <loc>https://blog.wntjd.kr/links/</loc>
+    <loc>http://localhost:1313/links/</loc>
   </url><url>
-    <loc>https://blog.wntjd.kr/search/</loc>
+    <loc>http://localhost:1313/search/</loc>
   </url>
 </urlset>

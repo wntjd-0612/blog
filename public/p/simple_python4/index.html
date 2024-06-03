@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
     <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="python?">
-<title>python이란?</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="python 기초문법-자료형">
+<title>python 기초문법4</title>
 
-<link rel='canonical' href='http://localhost:1313/p/about_python/'>
+<link rel='canonical' href='http://localhost:1313/p/simple_python4/'>
 
-<link rel="stylesheet" href="/scss/style.min.a98711dd77f882bba6c64662ae7c3515ce1792919805694d18301cf79deae512.css"><meta property='og:title' content="python이란?">
-<meta property='og:description' content="python?">
-<meta property='og:url' content='http://localhost:1313/p/about_python/'>
+<link rel="stylesheet" href="/scss/style.min.a98711dd77f882bba6c64662ae7c3515ce1792919805694d18301cf79deae512.css"><meta property='og:title' content="python 기초문법4">
+<meta property='og:description' content="python 기초문법-자료형">
+<meta property='og:url' content='http://localhost:1313/p/simple_python4/'>
 <meta property='og:site_name' content='wntjd'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='install' /><meta property='article:tag' content='ana' /><meta property='article:tag' content='python' /><meta property='article:published_time' content='2024-04-11T06:04:00&#43;00:00'/><meta property='article:modified_time' content='2024-04-11T06:04:00&#43;00:00'/><meta property='og:image' content='http://localhost:1313/p/about_python/thumb.png' />
-<meta name="twitter:title" content="python이란?">
-<meta name="twitter:description" content="python?"><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='http://localhost:1313/p/about_python/thumb.png' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='basic' /><meta property='article:tag' content='ana' /><meta property='article:tag' content='python' /><meta property='article:published_time' content='2024-05-02T00:50:00&#43;00:00'/><meta property='article:modified_time' content='2024-05-02T00:50:00&#43;00:00'/><meta property='og:image' content='http://localhost:1313/p/simple_python4/thumb.png' />
+<meta name="twitter:title" content="python 기초문법4">
+<meta name="twitter:description" content="python 기초문법-자료형"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='http://localhost:1313/p/simple_python4/thumb.png' />
     <link rel="shortcut icon" href="/favicon.png" />
 
     </head>
@@ -229,9 +229,15 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li><a href="#python-install">python install</a></li>
-    <li><a href="#python-특징">python 특징</a></li>
-    <li><a href="#python의-활용">python의 활용</a></li>
+    <li><a href="#이스케이프-시퀸스escape-sequence">이스케이프 시퀸스(escape sequence)</a></li>
+    <li><a href="#문자열-연산">문자열 연산</a></li>
+    <li><a href="#문자열-포매팅">문자열 포매팅</a>
+      <ol>
+        <li><a href="#format-함수를-사용한-포매팅">format 함수를 사용한 포매팅</a></li>
+        <li><a href="#f를-이용한-포매팅">f를 이용한 포매팅</a></li>
+      </ol>
+    </li>
+    <li><a href="#문자열-함수">문자열 함수</a></li>
   </ol>
 </nav>
         </div>
@@ -244,15 +250,15 @@
 
             <main class="main full-width">
     <article class="has-image main-article">
-    <header class="article-header" onclick="location.href='\/p\/about_python\/'" style="cursor: pointer;" >
+    <header class="article-header" onclick="location.href='\/p\/simple_python4\/'" style="cursor: pointer;" >
         <div class="article-image">
-            <a href="/p/about_python/">
-                <img src="/p/about_python/thumb_hu6ce46be598242d68941202901d39eb59_93419_800x0_resize_box_3.png"
-                        srcset="/p/about_python/thumb_hu6ce46be598242d68941202901d39eb59_93419_800x0_resize_box_3.png 800w, /p/about_python/thumb_hu6ce46be598242d68941202901d39eb59_93419_1600x0_resize_box_3.png 1600w"
+            <a href="/p/simple_python4/">
+                <img src="/p/simple_python4/thumb_hu6ce46be598242d68941202901d39eb59_93419_800x0_resize_box_3.png"
+                        srcset="/p/simple_python4/thumb_hu6ce46be598242d68941202901d39eb59_93419_800x0_resize_box_3.png 800w, /p/simple_python4/thumb_hu6ce46be598242d68941202901d39eb59_93419_1600x0_resize_box_3.png 1600w"
                         width="800" 
                         height="206" 
                         loading="lazy"
-                        alt="Featured image of post python이란?" />
+                        alt="Featured image of post python 기초문법4" />
                 
             </a>
         </div>
@@ -275,12 +281,12 @@
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/p/about_python/">python이란?</a>
+            <a href="/p/simple_python4/">python 기초문법4</a>
         </h2>
     
         
         <h3 class="article-subtitle">
-            python?
+            python 기초문법-자료형
         </h3>
         
     </div>
@@ -301,7 +307,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">Apr 44, 11114</time>
+                <time class="article-time--published">Apr 55, 20250</time>
             </div>
         
 
@@ -332,116 +338,163 @@
     <section class="article-content">
     
     
-    <h1 id="python이란">python이란?</h1>
-<p>암스테르담의 <a class="link" href="https://github.com/gvanrossum"  target="_blank" rel="noopener"
-    >귀도 반 로섬(Guido van rossum)</a>이 개발한 인터프리터 언어</p>
-<h2 id="python-install">python install</h2>
+    <h1 id="문자열">문자열</h1>
+<p><a class="link" href="https://blog.wntjd.kr/p/simple_python2/"  target="_blank" rel="noopener"
+    >지난 시간</a>에 배웠던 내용인 문자열에 대해서 자세히 알아보자</p>
+<h1 id="문자열-자료형">문자열 자료형</h1>
+<h2 id="이스케이프-시퀸스escape-sequence">이스케이프 시퀸스(escape sequence)</h2>
 <ul>
 <li>
-<p>window</p>
-<ul>
-<li><a class="link" href="https://www.python.org/downloads/"  target="_blank" rel="noopener"
-    >여기서</a> 설치를 한다</li>
-</ul>
+<p>문자열에서 표현하기 어려운 특정 문자를 백 슬레시()로 표현하는 것</p>
 </li>
 <li>
-<p>Mac</p>
-<ul>
-<li>이미 설치가 되어있다</li>
-</ul>
-</li>
-</ul>
-<h2 id="python-특징">python 특징</h2>
-<ul>
-<li>인터프리터 언어: 소스 코드를 한 줄씩 해석해서 실행결과를 바로 확인할 수 있는 언어</li>
-</ul>
 <div class="table-wrapper"><table>
 <thead>
 <tr>
-<th></th>
-<th>인터프리터 언어</th>
-<th>컴파일 언어</th>
+<th>이스케이프 시퀸스</th>
+<th>의미</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>용어 정의</td>
-<td>소스코드를 한줄씩 해석해서 실행 결과를 바로 확인 할 수 있는 언어</td>
-<td>코드가 실행 되기전, 기계어로 모두 번역하여 실행하는 언어</td>
+<td>\n</td>
+<td>개행(엔터)</td>
 </tr>
 <tr>
-<td>특징</td>
-<td>한 줄씩 번역과 실행을 동시에 진행하므로 상대적으로 느림 <br/> 잘못된 명령을 수정하기 쉬움</td>
-<td>소스 코드를 목적 코드로 번역하는 과정에서 시간이 소요됨 <br/> 런타임 상황에서는 빠르게 실행 가능</td>
+<td>\b</td>
+<td>백스페이스(글자 하나를 지움)</td>
 </tr>
 <tr>
-<td>예시</td>
-<td>Python, JavaScript</td>
-<td>C, C++</td>
+<td>\t</td>
+<td>탭</td>
+</tr>
+<tr>
+<td>\'</td>
+<td>작은 따옴표</td>
+</tr>
+<tr>
+<td>\&quot;</td>
+<td>큰 따옴표</td>
+</tr>
+<tr>
+<td>\\</td>
+<td>백 슬레시 문자</td>
 </tr>
 </tbody>
 </table></div>
+</li>
+</ul>
+<h2 id="문자열-연산">문자열 연산</h2>
 <ul>
-<li>
-<p>동적 타입 언어</p>
+<li>문자열 연산하기 (Concatenation)
 <ul>
-<li>변수의 자료형을 지정하지 않고 선언만으로도 값 지정 가능 <br/>ex)
+<li>덧셈부호(+)를 이용하여 문자열 연결 연산 수행 가능</li>
+</ul>
+</li>
+<li>문자열 반복하기
+<ul>
+<li>곱셈 부호(*)를 이용하여 문자열을 반복하는 연산 수행 가능</li>
+<li><code>문자열 * 정수</code> <code>정수 * 문자열</code>의 형태로 사용</li>
+</ul>
+</li>
+</ul>
+<h2 id="문자열-포매팅">문자열 포매팅</h2>
+<ul>
+<li>포매팅(Formatting) : 사용자가 문자열의 <code>포맷을 지정하는 것</code></li>
+<li>문자열에 포함된 값이 계속해서 변경될 경우, 변수와 포매팅을 이용하여 가독성을 높일 수 있다.</li>
+<li>문자열 안에 포맷 코드를 입력한 뒤, 가장 뒤에 <code>%</code>와 함께 대응하는 값을 써준다.</li>
+</ul>
+<ul>
+<li><code>포맷 코드에 대응하는 값이 올바르게 연결되어야 하며, 포맷 코드와 대응되는 개수가 같아야 함 </code></li>
+</ul>
+<ul>
+<li>문자열 포맷 코드</li>
+<li>| 코드  | 설명                 |
+|&mdash;&ndash;|&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;|
+| %s  | 문자열(stirng)        |
+| %c  | 문자 1개 (character)  |
+| %d  | 정수(integer)        |
+| %f  | 실수(floating-point) |
+| %%  | %자체를 출력            |</li>
+</ul>
+<h3 id="format-함수를-사용한-포매팅">format 함수를 사용한 포매팅</h3>
+<ul>
+<li>문자열 내에 {name1},{name2}, ..와 같은 형태로 이름을 붙여 사용하고, format 함수에 이름에 해당하는 입력값을 넣어주면 대응하는 값으로 바뀌어 출력한다</li>
+</ul>
+<h3 id="f를-이용한-포매팅">f를 이용한 포매팅</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="n">a</span> <span class="o">=</span> <span class="mi">10</span>
-</span></span><span class="line"><span class="cl"><span class="n">a</span> <span class="o">=</span> <span class="s1">&#39;asdf&#39;</span> <span class="c1">#정수 자료형을 문자열로 바꿔도 오류가 나지 않는다.</span>
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;</span><span class="si">{</span><span class="n">asf</span><span class="si">}</span><span class="s2">이다&#34;</span><span class="p">)</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div></li>
-<li>변수의 자료형은 코드가 시행되는 시점에 결정</li>
-<li>프로그램이 복잡해질 경우 타입으로 인한 에러가 발생 할 수도 있음</li>
-</ul>
-</li>
-<li>
-<p>객체 지향 언어</p>
+</div><h2 id="문자열-함수">문자열 함수</h2>
 <ul>
-<li>객체의 특징을 클래스로 구현</li>
-<li>클래스로 구현된 프로그래밍을 다른 프로그래밍에 재사용 할 수 있다.</li>
-<li>클래스는 캡슐화를 거치면 그 안의 코드를 몰라도 사용할 수 있다.</li>
-<li>다향성이 적용되어 같은 객체를 가지고도 다양하게 사용될 수 있다.</li>
-</ul>
+<li>문자열 자료형이 자체적으로 가지고 있는 내장함수를 사용할 수 있다.</li>
+<li>문자열 변구 이름 뒤에 .을 붙인 다음 함수를 호출하는 방식으러 사용한다.</li>
+<li>함수의 종류
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>함수</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>count()</td>
+<td>전달인자와 같은 문자의 개수를 반환</td>
+</tr>
+<tr>
+<td>find()</td>
+<td>전달인자를 찾아 인덱스 값을 반환, 없다면 -1반환</td>
+</tr>
+<tr>
+<td>index()</td>
+<td>전달인자를 찾아 인덱스 값을 반환, 없다면 오류 반환</td>
+</tr>
+<tr>
+<td>join()</td>
+<td>전달인자 사이에 문자열을 삽입</td>
+</tr>
+<tr>
+<td>upper()</td>
+<td>소문자를 대문자로 바꾸기</td>
+</tr>
+<tr>
+<td>lower()</td>
+<td>대문자를 소문자로 바꾸기</td>
+</tr>
+<tr>
+<td>lstrip()</td>
+<td>가장 왼쪽에 있는 공백 모두 지우기</td>
+</tr>
+<tr>
+<td>rstrip()</td>
+<td>가장 오른쪽에 있는 공백 모두 지우기</td>
+</tr>
+<tr>
+<td>replace()</td>
+<td>문자열 안의 특정한 값을 다른 값으로 치환</td>
+</tr>
+<tr>
+<td>split()</td>
+<td>전달인자 기준으로 문자열을 나눠 리스트로 반환</td>
+</tr>
+<tr>
+<td>odd()</td>
+<td>문자에 대응하는 아스키코드 값을 반환</td>
+</tr>
+<tr>
+<td>chr()</td>
+<td>아스키코드 값에 대응하는 문자를 반환</td>
+</tr>
+</tbody>
+</table></div>
 </li>
-<li>
-<p>쉽고 간결 =&gt; &lsquo;개발 속도&rsquo;가 빠르다</p>
-<ul>
-<li>&ldquo;Life is too short, You need Python&rdquo;<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></li>
 </ul>
-</li>
-<li>
-<p>높은 확장성과 이식성</p>
-<ul>
-<li>대표적인 접착언어, 다른언어와 쉽게 결합이 가능하다.</li>
-<li>수많은 라이브러리를 제공, 문제해결을 빠르게 해결하고 확장할 수 있음</li>
-</ul>
-</li>
-</ul>
-<h2 id="python의-활용">python의 활용</h2>
-<ul>
-<li><code>시스템 유틸리티 제작</code>: 운영체제의 시스템 명령어를 사용할 수 있는 각종 도구를 갖추고 있다</li>
-<li><code>GUI 프로그래밍</code>: 파이썬은 GUI 프로그래밍을 위한 도구들이 잘 갖추어져 있기 때문에 GUI 프로그램을 쉽게 만들 수 있다.</li>
-<li><code>웹 프로그래밍</code>: 파이썬은 웹 프로그램을 만들기에 매우 적합한 도구이며, 실제로 파이썬으로 제작한 웹 사이트는 셀 수 없을 정도로 많다.</li>
-<li><code>데이터베이스 프로그래밍</code>: 파이썬은 사이베이스(Sybase), 인포믹스(Infomix), 오라클(Oracle), 마이에스큐엘(MySQL), 포스트그레스큐엘(PostgreSQL) 등의 데이터베이스에 접근하기 위한 도구를 제공한다.</li>
-<li><code>데이터 분석</code>: 파이썬은 데이터 분석에 이상적인 언어로, 넘파이(NumPy), 판다스(Pandas), 맷플롯립(Matplotlib) 등과 같은 라이브러리들을 활용하여 데이터 처리, 통계 분석, 시각화를 손쉽게 수행할 수 있다.</li>
-<li><code>머신러닝 프로그래밍</code>: 파이썬은 인공지능과 머신러닝 프로그래밍을 쉽게 할 수 있도록 사이킷런(scikit-learn), 텐서플로(TensorFlow), 파이토치(PyTorch), 케라스(Keras) 등과 같은 다양한 라이브러리를 제공한다.</li>
-<li><code>시스템 유틸리티 제작하기</code>: 파이썬은 운영체제(윈도우, 리눅스 등)의 시스템 명령어를 사용할 수 있는 각종 도구를 갖추고 있다</li>
-</ul>
-<div class="footnotes" role="doc-endnotes">
-<hr>
-<ol>
-<li id="fn:1">
-<p>엄청나게 빠른 파이썬의 개발 속도 때문에 유행처럼 퍼진 말이다.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
-</li>
-</ol>
-</div>
 
 </section>
 
@@ -450,7 +503,7 @@
     
     <section class="article-tags">
         
-            <a href="/tags/install/">Install</a>
+            <a href="/tags/basic/">Basic</a>
         
             <a href="/tags/ana/">Ana</a>
         
@@ -481,7 +534,7 @@
 
 
         <span>
-            마지막 수정:  Apr 44, 11114 46:117 UTC
+            마지막 수정:  Apr 55, 20250 56:27 UTC
         </span>
     </section></footer>
 
@@ -497,30 +550,6 @@
     <h2 class="section-title">관련 글</h2>
     <div class="related-content">
         <div class="flex article-list--tile">
-            
-                
-<article class="has-image">
-    <a href="/p/simple_python4/">
-        
-        
-            <div class="article-image">
-                <img src="/p/simple_python4/thumb.3b0892711d7711382d9e42bf4e1860d1_hu6ce46be598242d68941202901d39eb59_93419_250x150_fill_box_smart1_3.png" 
-                        width="250" 
-                        height="150" 
-                        loading="lazy"
-                        alt="Featured image of post python 기초문법4"
-                        data-key="simple_python4" 
-                        data-hash="md5-OwiScR13ETgtnkK/Thhg0Q==">
-                
-            </div>
-        
-
-        <div class="article-details">
-            <h2 class="article-title">python 기초문법4</h2>
-        </div>
-    </a>
-</article>
-
             
                 
 <article class="has-image">
@@ -541,6 +570,54 @@
 
         <div class="article-details">
             <h2 class="article-title">python 기초문법3</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/simple_python2/">
+        
+        
+            <div class="article-image">
+                <img src="/p/simple_python2/thumb.3b0892711d7711382d9e42bf4e1860d1_hu6ce46be598242d68941202901d39eb59_93419_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post python 기초문법2"
+                        data-key="simple_python2" 
+                        data-hash="md5-OwiScR13ETgtnkK/Thhg0Q==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">python 기초문법2</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/simple_python1/">
+        
+        
+            <div class="article-image">
+                <img src="/p/simple_python1/thumb.3b0892711d7711382d9e42bf4e1860d1_hu6ce46be598242d68941202901d39eb59_93419_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post python 기초문법1"
+                        data-key="simple_python1" 
+                        data-hash="md5-OwiScR13ETgtnkK/Thhg0Q==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">python 기초문법1</h2>
         </div>
     </a>
 </article>
@@ -589,30 +666,6 @@
 
         <div class="article-details">
             <h2 class="article-title">백준 9461</h2>
-        </div>
-    </a>
-</article>
-
-            
-                
-<article class="has-image">
-    <a href="/p/baekjoon_28215/">
-        
-        
-            <div class="article-image">
-                <img src="/p/baekjoon_28215/thumb.7069dd5e24bd85b6ec03a61010feecf0_hufeb8c3ca71f33f4bcc8d200b08d27217_56508_250x150_fill_box_smart1_3.png" 
-                        width="250" 
-                        height="150" 
-                        loading="lazy"
-                        alt="Featured image of post 백준 28215"
-                        data-key="baekjoon_28215" 
-                        data-hash="md5-cGndXiS9hbbsA6YQEP7s8A==">
-                
-            </div>
-        
-
-        <div class="article-details">
-            <h2 class="article-title">백준 28215</h2>
         </div>
     </a>
 </article>
