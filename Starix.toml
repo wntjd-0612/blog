@@ -9,7 +9,7 @@ avatar="https://avatars.githubusercontent.com/u/129721844?v=4"
 
 [post]
 # 포스트시 메세지
-content="=<@1219805864118980619> `{starix.id}`가 올라왔어요!"
+content="=<@&1219805864118980619> `{starix.id}`가 올라왔어요!"
 # 포스트시 메세지
 color="#2E7EFF"
 
