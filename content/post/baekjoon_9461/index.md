@@ -9,8 +9,6 @@ date: 2024-04-12 06:48:00+0000
 image: thumb.png
 categories:
     - baekjoon
-    - ana
-    - python
 tags:
     - baekjoon
     - ana

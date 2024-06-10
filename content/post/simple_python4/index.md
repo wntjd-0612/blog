@@ -6,7 +6,6 @@ date: 2024-05-02 00:50:00+0000
 image: thumb.png
 categories:
     - python
-    - ana
 tags:
     - basic
     - ana

@@ -6,10 +6,34 @@
         <description>Recent content in Tags on wntjd</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Thu, 02 May 2024 00:50:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 09 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>2</title>
+        <link>http://localhost:1313/tags/2/</link>
+        <pubDate>Sun, 09 Jun 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/tags/2/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Cs</title>
+        <link>http://localhost:1313/tags/cs/</link>
+        <pubDate>Sun, 09 Jun 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/tags/cs/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Python</title>
+        <link>http://localhost:1313/tags/python/</link>
+        <pubDate>Sun, 09 Jun 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/tags/python/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>Ana</title>
         <link>http://localhost:1313/tags/ana/</link>
-        <pubDate>Thu, 02 May 2024 00:50:00 +0000</pubDate>
+        <pubDate>Sun, 02 Jun 2024 00:08:00 +0000</pubDate>
         
         <guid>http://localhost:1313/tags/ana/</guid>
         <description></description>
@@ -17,17 +41,9 @@
         <item>
         <title>Basic</title>
         <link>http://localhost:1313/tags/basic/</link>
-        <pubDate>Thu, 02 May 2024 00:50:00 +0000</pubDate>
+        <pubDate>Sun, 02 Jun 2024 00:08:00 +0000</pubDate>
         
         <guid>http://localhost:1313/tags/basic/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Python</title>
-        <link>http://localhost:1313/tags/python/</link>
-        <pubDate>Thu, 02 May 2024 00:50:00 +0000</pubDate>
-        
-        <guid>http://localhost:1313/tags/python/</guid>
         <description></description>
         </item>
         <item>

@@ -6,7 +6,6 @@ date: 2024-04-11 06:04:00+0000
 image: thumb.png
 categories:
     - python
-    - ana
 tags:
     - install
     - ana
