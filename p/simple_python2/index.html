@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="python 기초문법-자료형">
+<title>python 기초문법2</title>
+
+<link rel='canonical' href='http://localhost:1313/p/simple_python2/'>
+
+<link rel="stylesheet" href="/scss/style.min.a98711dd77f882bba6c64662ae7c3515ce1792919805694d18301cf79deae512.css"><meta property='og:title' content="python 기초문법2">
+<meta property='og:description' content="python 기초문법-자료형">
+<meta property='og:url' content='http://localhost:1313/p/simple_python2/'>
+<meta property='og:site_name' content='wntjd'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='basic' /><meta property='article:tag' content='ana' /><meta property='article:tag' content='python' /><meta property='article:published_time' content='2024-04-12T00:48:00&#43;00:00'/><meta property='article:modified_time' content='2024-04-12T00:48:00&#43;00:00'/><meta property='og:image' content='http://localhost:1313/p/simple_python2/thumb.png' />
+<meta name="twitter:title" content="python 기초문법2">
+<meta name="twitter:description" content="python 기초문법-자료형"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='http://localhost:1313/p/simple_python2/thumb.png' />
+    <link rel="shortcut icon" href="/favicon.png" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="메뉴 여닫기">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu6b33fd7a31c1ab34735d3a03c11b5fd9_37929_300x0_resize_box_3.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🍪</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">wntjd</a></h1>
+            <h2 class="site-description">AnA 14th/sunrin SW 118th</h2>
+        </div>
+    </header><ol class="social-menu">
+            
+                <li>
+                    <a 
+                        href='https://github.com/wntjd-0612'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>Links</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>다크 모드</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">목차</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#리스트-자료형">리스트 자료형</a>
+      <ol>
+        <li><a href="#리스트-연산">리스트 연산</a></li>
+        <li><a href="#리스트-인덱싱과-슬라이싱">리스트 인덱싱과 슬라이싱</a>
+          <ol>
+            <li><a href="#리스트-인덱싱">리스트 인덱싱</a></li>
+            <li><a href="#리스트-슬라이싱">리스트 슬라이싱</a></li>
+            <li><a href="#리스트-수정하기">리스트 수정하기</a></li>
+          </ol>
+        </li>
+        <li><a href="#리스트-함수">리스트 함수</a></li>
+      </ol>
+    </li>
+    <li><a href="#튜플-자료형">튜플 자료형</a>
+      <ol>
+        <li><a href="#튜플-연산-1">튜플 연산 </a></li>
+        <li><a href="#튜플-인덱싱과-슬라이싱-1">튜플 인덱싱과 슬라이싱 </a></li>
+      </ol>
+    </li>
+    <li><a href="#딕셔너리-자료형">딕셔너리 자료형</a>
+      <ol>
+        <li><a href="#요소추가-수정-삭제">요소추가, 수정, 삭제</a></li>
+        <li><a href="#딕셔너리-함수">딕셔너리 함수</a></li>
+      </ol>
+    </li>
+    <li><a href="#집합-자료형">집합 자료형</a>
+      <ol>
+        <li><a href="#집합-연산과-함수">집합 연산과 함수</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header" onclick="location.href='\/p\/simple_python2\/'" style="cursor: pointer;" >
+        <div class="article-image">
+            <a href="/p/simple_python2/">
+                <img src="/p/simple_python2/thumb_hu6ce46be598242d68941202901d39eb59_93419_800x0_resize_box_3.png"
+                        srcset="/p/simple_python2/thumb_hu6ce46be598242d68941202901d39eb59_93419_800x0_resize_box_3.png 800w, /p/simple_python2/thumb_hu6ce46be598242d68941202901d39eb59_93419_1600x0_resize_box_3.png 1600w"
+                        width="800" 
+                        height="206" 
+                        loading="lazy"
+                        alt="Featured image of post python 기초문법2" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/python/" >
+                Python
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/simple_python2/">python 기초문법2</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            python 기초문법-자료형
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Apr 44, 121248</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    4 분 정도
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+
+    <section class="article-content">
+    
+    
+    <h1 id="python의-자료형">python의 자료형</h1>
+<ul>
+<li>파이썬은 자동으로 자료형을 추론해 주지만, 프로그램을 만들때 어떤 자료를 저장할 것인지 알고 있는 것은 매우 중요합니다.</li>
+<li>파이썬의 자료형은 크게 데이터형과 컨테이너형으로 구분할 수 있습니다. 오늘은 컨테이너형만 다룰 것입니다.</li>
+</ul>
+<h1 id="컨테이너형">컨테이너형</h1>
+<ul>
+<li>여러 개의 변수를 하나의 이름으로 묶어서 관리할 수 있는 데이터 포맷 형태</li>
+</ul>
+<h2 id="리스트-자료형">리스트 자료형</h2>
+<ul>
+<li>데이터를 연속적인 공간에 저장하는 자료구조, 서로 다른 자료형도 저장할 수 있습니다.</li>
+<li>리스트에 각 요소는 쉼표로 구분, 대괄호(<code>[]</code>)로 감싸서 표현합니다</li>
+</ul>
+<h3 id="리스트-연산">리스트 연산</h3>
+<ul>
+<li>덧셈기호(<code>+</code>)를 사용하여 리스트 연결 연산을 수행할 수 있다.</li>
+<li>곱셈기호(<code>*</code>)를 사용하여 리스트를 반복하는 연산을 수행할 수 있다.
+<ul>
+<li>리스트<em>정수, 정수</em>리스트 형태로 사용할 수 있다.</li>
+</ul>
+</li>
+<li>len함수(<code>len()</code>)를 사용하여 리스트에 길이를 구할 수 있다.</li>
+</ul>
+<h3 id="리스트-인덱싱과-슬라이싱">리스트 인덱싱과 슬라이싱</h3>
+<h4 id="리스트-인덱싱">리스트 인덱싱</h4>
+<ul>
+<li>인덱싱(indexing): 수많은 데이터중 원하는 항목을 쉽게 찾도록 &lsquo;가리키는 것&rsquo;</li>
+<li>⭐인덱스 번호는 0부터 시작</li>
+<li>뒤에서부터 읽기 위해서 마이너스 기호를 사용, 이때 뒤에서부터 첫 번째값은 인덱스<code>-1</code>로 표현한다.</li>
+</ul>
+<h4 id="리스트-슬라이싱">리스트 슬라이싱</h4>
+<ul>
+<li>슬라이싱(slicing): 인덱스를 사용하여 수많은 데이터 중 원하는 항목을 <code>잘라내는 것</code></li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="n">변수명</span><span class="p">[</span><span class="n">시작</span> <span class="n">인덱스</span> <span class="n">번호</span><span class="p">:</span><span class="n">끝</span> <span class="n">인덱스</span> <span class="n">번호</span><span class="p">]</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>시작 인덱스 번호에 해당하는 값부터 잘라내며, 끝 인덱스 번호는 포함하지 않음</li>
+<li>시작 인덱스 번호 생략: 리스트에 시작 ~ 끝 인덱스 번호 전</li>
+<li>끝 인덱스 번호 생략: 시작 인덱스 번호 ~ 리스트의 끝</li>
+<li>시작과 끝의 인덱스 번호를 모두 생략: 리스트의 시작 ~ 리스트의 끝</li>
+</ul>
+<h4 id="리스트-수정하기">리스트 수정하기</h4>
+<ul>
+<li>문자열은 immutable 타입이기 때문에 인덱싱으로 값을 수정할 수 없지만, 리스트는 인덱싱과 슬라이싱을 사용하여 수정 할 수 있다.</li>
+<li>리스트의 기존 요소를 빈칸으로 수정함으로써 요소를 삭제할 수 있으며, dle 키워드를 사용하여 삭제할 수 있다.</li>
+</ul>
+<h3 id="리스트-함수">리스트 함수</h3>
+<ul>
+<li>문자열과 마찬가지로 리스트 변수 이름 뒤에 <code>.</code>을 붙여 함수를 호출하는 방식으로 사용한다.</li>
+<li>함수의 종류</li>
+</ul>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align:center">종류</th>
+<th style="text-align:center">함수</th>
+<th style="text-align:center">설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">요소 추가</td>
+<td style="text-align:center">append(x)</td>
+<td style="text-align:center">리스트 맨 뒤에 요소 x 추가</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center">insert(x,y)</td>
+<td style="text-align:center">인덱스 x 위치에 y를 추가</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center">extend(x)</td>
+<td style="text-align:center">리스트 맨 뒤에 리스트 x를 추가</td>
+</tr>
+<tr>
+<td style="text-align:center">요소 삭제</td>
+<td style="text-align:center">remove(x)</td>
+<td style="text-align:center">가장 처음 나오는 x를 찾아 삭제, 없으면 오류 발생</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center">pop()</td>
+<td style="text-align:center">리스트 마지막 요소를 반환 후 삭제</td>
+</tr>
+<tr>
+<td style="text-align:center">요소 배열</td>
+<td style="text-align:center">sort()</td>
+<td style="text-align:center">리스트 요소를 정렬</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center">reverse()</td>
+<td style="text-align:center">리스트를 역순으로 뒤집기</td>
+</tr>
+<tr>
+<td style="text-align:center">리스트 정보</td>
+<td style="text-align:center">index(x)</td>
+<td style="text-align:center">x를 찾아 인덱스 값을 반환, 없다면 오류 발생</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center">count(x)</td>
+<td style="text-align:center">리스트 내 x의 개수 반환</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>빈 리스트에 값을 초기화하지 않은 상태에서는 인덱스를 사용하여 요소에 접근할 수 없다.</li>
+<li>빈 리스트에 새로운 요소를 추가하기 위해서는 append 함수를 사용해야 하며, 여러 개의 요소를 한 번에 추가하려는 경우 extend 함수를 사용할 수 있다.</li>
+</ul>
+<h2 id="튜플-자료형">튜플 자료형</h2>
+<ul>
+<li>몇가지의 다른 점을 제외하면 리스트와 거의 비슷한 자료형이다.</li>
+<li>아래 몇가지 차이점이 있다
+<ul>
+<li>리스트는 [], 튜플은 ()으로 둘러싼다.</li>
+<li>리스트는 요솟값의 생성, 삭제, 수정이 가능하지만, 튜플은 요솟값을 바꿀 수 없다.</li>
+</ul>
+</li>
+</ul>
+<h3 id="튜플-연산-1">튜플 연산 <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></h3>
+<ul>
+<li>덧셈기호(<code>+</code>)를 사용하여 튜플 연결 연산을 수행할 수 있다.</li>
+<li>곱셈기호(<code>*</code>)를 사용하여 튜플을 반복하는 연산을 수행할 수 있다.
+<ul>
+<li>리스트<em>튜플, 정수</em>튜플 형태로 사용할 수 있다.</li>
+</ul>
+</li>
+<li>len함수(<code>len()</code>)를 사용하여 리스트에 길이를 구할 수 있다.</li>
+</ul>
+<h3 id="튜플-인덱싱과-슬라이싱-1">튜플 인덱싱과 슬라이싱 <sup id="fnref1:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></h3>
+<ul>
+<li>문자열과 리스트의 인덱싱, 슬라이싱과 동일하게 사용할 수 있다.</li>
+</ul>
+<h2 id="딕셔너리-자료형">딕셔너리 자료형</h2>
+<ul>
+<li>KEY와 VALUE를 한쌍으로 가지며 대응관계를 나타내는 자료형이다.</li>
+<li>요소값에 대한 순서가 없으며 <code>&quot;Key: Value&quot;</code>의 형태로 값을 저장하요 Ket를 통해 Value를 얻을 수 있다.</li>
+<li>쌍을 이루는 각 요소는 쉼표로 구분하며 중괄호(<code>{}</code>)로 감싸서 표현한다.</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">dic</span> <span class="o">=</span> <span class="p">{</span><span class="n">key1</span><span class="p">:</span><span class="n">value1</span><span class="p">,</span><span class="n">key2</span><span class="p">:</span><span class="n">value2</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="n">dic</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">key1</span><span class="o">=</span><span class="n">value1</span><span class="p">,</span><span class="n">key2</span><span class="o">=</span><span class="n">value2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">dic</span> <span class="o">=</span> <span class="p">{}</span> <span class="c1">#비어있는 딕셔너리</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>-주의 사항 -
+<ul>
+<li>딕셔너리의 Key에 리스트를 사용할 수 없다.</li>
+<li>value에는 어떤 값이든 사용할 수 있다.</li>
+<li>Key는 Value를 찾기 위한 유일한 값이므로 중복을 사용할 경우 하나를 제외한 나머지 요소는 무시된다.</li>
+</ul>
+</li>
+</ul>
+<h3 id="요소추가-수정-삭제">요소추가, 수정, 삭제</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">딕셔너리</span> <span class="n">이름</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span> <span class="c1">#딕셔너리에 값 추가</span>
+</span></span><span class="line"><span class="cl"><span class="k">del</span> <span class="n">딕셔너리</span> <span class="n">이름</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="c1">#{key:value} 쌍 삭제</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="딕셔너리-함수">딕셔너리 함수</h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>함수</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>keys</td>
+<td>key만 모아서 dict_keys 객채 형태로 리턴</td>
+</tr>
+<tr>
+<td>values</td>
+<td>value만 모아서 dict_values 객채 형태로 리턴</td>
+</tr>
+<tr>
+<td>item</td>
+<td>key,value 쌍을 튜플로 묶어 dict_items 객채 형태로 리턴</td>
+</tr>
+<tr>
+<td>clear</td>
+<td>key:value 쌍 모두 지우기</td>
+</tr>
+<tr>
+<td>get(key)</td>
+<td>key로 value 얻기</td>
+</tr>
+<tr>
+<td>key in x</td>
+<td>key가 딕셔너리 x안에 있는지 조사하여 True/False 반환</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="집합-자료형">집합 자료형</h2>
+<ul>
+<li>집합의 특징을 그대로 구현하여 집합에 관련된 것을 쉽게 처리하기 위한 자료형</li>
+<li>집합의 각 요소는 쉼표로 구현하고 <code>{}</code>로 감싸서 표현한다.</li>
+<li>요소의 순서가 없고 그로인해 인덱싱과 슬라이싱을 사용할 수 없다.</li>
+<li>중복되는 값은 한 개만 저장하기 때문에 리스트 혹은 집합은 집합의 원소가 될 수 없다.</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">집합</span> <span class="n">이름</span> <span class="o">=</span> <span class="p">{</span><span class="n">요소1</span><span class="p">,</span><span class="n">요소2</span><span class="p">,</span> <span class="o">...</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="n">집합</span> <span class="n">이름</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">묶음</span> <span class="n">자료형</span><span class="p">)</span><span class="c1">#문자열,리스트, 튜플을 집합으로 변경</span>
+</span></span><span class="line"><span class="cl"><span class="n">집합</span> <span class="n">이름</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="집합-연산과-함수">집합 연산과 함수</h3>
+<ul>
+<li>종류</li>
+</ul>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>연산</th>
+<th>설명</th>
+<th>사용 구문</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>교집합</td>
+<td>집합에 공통으로 들어 있는 원소의 집합</td>
+<td>&amp; ,intersection()</td>
+</tr>
+<tr>
+<td>합집합</td>
+<td>적어도 한 집합에 들어 있는 원소의 집합</td>
+<td>| ,union()</td>
+</tr>
+<tr>
+<td>차집합</td>
+<td>A에 대한 B의 차집합(A-B)은 A의 속하고 B에는 속하지 않는 원소의 집합</td>
+<td>- ,difference()</td>
+</tr>
+</tbody>
+</table></div>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>함수</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>add(x)</td>
+<td>x 값 추가</td>
+</tr>
+<tr>
+<td>update(묶음 자료형)</td>
+<td>묶음 자료형 내 여러개의 요소 추가</td>
+</tr>
+<tr>
+<td>remove(x)</td>
+<td>x의 값 삭제</td>
+</tr>
+</tbody>
+</table></div>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>그냥 리스트랑 똑같다&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref1:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/basic/">Basic</a>
+        
+            <a href="/tags/ana/">Ana</a>
+        
+            <a href="/tags/python/">Python</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    <section class="article-lastmod">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <span>
+            마지막 수정:  Apr 44, 121248 46:127 UTC
+        </span>
+    </section></footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">관련 글</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/simple_python5/">
+        
+        
+            <div class="article-image">
+                <img src="/p/simple_python5/thumb.3b0892711d7711382d9e42bf4e1860d1_hu6ce46be598242d68941202901d39eb59_93419_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post python 기초문법5"
+                        data-key="simple_python5" 
+                        data-hash="md5-OwiScR13ETgtnkK/Thhg0Q==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">python 기초문법5</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/simple_python4/">
+        
+        
+            <div class="article-image">
+                <img src="/p/simple_python4/thumb.3b0892711d7711382d9e42bf4e1860d1_hu6ce46be598242d68941202901d39eb59_93419_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post python 기초문법4"
+                        data-key="simple_python4" 
+                        data-hash="md5-OwiScR13ETgtnkK/Thhg0Q==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">python 기초문법4</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/simple_python3/">
+        
+        
+            <div class="article-image">
+                <img src="/p/simple_python3/thumb.3b0892711d7711382d9e42bf4e1860d1_hu6ce46be598242d68941202901d39eb59_93419_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post python 기초문법3"
+                        data-key="simple_python3" 
+                        data-hash="md5-OwiScR13ETgtnkK/Thhg0Q==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">python 기초문법3</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/simple_python1/">
+        
+        
+            <div class="article-image">
+                <img src="/p/simple_python1/thumb.3b0892711d7711382d9e42bf4e1860d1_hu6ce46be598242d68941202901d39eb59_93419_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post python 기초문법1"
+                        data-key="simple_python1" 
+                        data-hash="md5-OwiScR13ETgtnkK/Thhg0Q==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">python 기초문법1</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/about_python/">
+        
+        
+            <div class="article-image">
+                <img src="/p/about_python/thumb.3b0892711d7711382d9e42bf4e1860d1_hu6ce46be598242d68941202901d39eb59_93419_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post python이란?"
+                        data-key="about_python" 
+                        data-hash="md5-OwiScR13ETgtnkK/Thhg0Q==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">python이란?</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <script
+    src="https://giscus.app/client.js"
+    data-repo="wntjd-0612/blog"
+    data-repo-id="R_kgDOLst0yQ"
+    data-category="General"
+    data-category-id="DIC_kwDOLst0yc4CenqH"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="light"
+    data-lang="en"
+    crossorigin="anonymous"
+    async
+></script>
+<script>
+    function setGiscusTheme(theme) {
+        let giscus = document.querySelector("iframe.giscus-frame");
+        if (giscus) {
+            giscus.contentWindow.postMessage(
+                {
+                    giscus: {
+                        setConfig: {
+                            theme: theme,
+                        },
+                    },
+                },
+                "https://giscus.app"
+            );
+        }
+    }
+
+    (function () {
+        addEventListener("message", (e) => {
+            if (event.origin !== "https://giscus.app") return;
+            handler();
+        });
+        window.addEventListener("onColorSchemeChange", handler);
+
+        function handler() {
+            if (document.documentElement.dataset.scheme === "light") {
+                setGiscusTheme('light');
+            } else {
+                setGiscusTheme('dark_dimmed');
+            }
+        }
+    })();
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2024 wntjd
+    </section>
+    
+    <section class="powerby">
+        <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a>로 만듦 <br />
+        <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>의 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.24.1">Stack</a></b> 테마 사용 중
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

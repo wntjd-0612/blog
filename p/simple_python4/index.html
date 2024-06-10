@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="python 기초문법-자료형">
+<title>python 기초문법4</title>
+
+<link rel='canonical' href='http://localhost:1313/p/simple_python4/'>
+
+<link rel="stylesheet" href="/scss/style.min.a98711dd77f882bba6c64662ae7c3515ce1792919805694d18301cf79deae512.css"><meta property='og:title' content="python 기초문법4">
+<meta property='og:description' content="python 기초문법-자료형">
+<meta property='og:url' content='http://localhost:1313/p/simple_python4/'>
+<meta property='og:site_name' content='wntjd'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='basic' /><meta property='article:tag' content='ana' /><meta property='article:tag' content='python' /><meta property='article:published_time' content='2024-05-02T00:50:00&#43;00:00'/><meta property='article:modified_time' content='2024-05-02T00:50:00&#43;00:00'/><meta property='og:image' content='http://localhost:1313/p/simple_python4/thumb.png' />
+<meta name="twitter:title" content="python 기초문법4">
+<meta name="twitter:description" content="python 기초문법-자료형"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='http://localhost:1313/p/simple_python4/thumb.png' />
+    <link rel="shortcut icon" href="/favicon.png" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="메뉴 여닫기">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu6b33fd7a31c1ab34735d3a03c11b5fd9_37929_300x0_resize_box_3.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🍪</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">wntjd</a></h1>
+            <h2 class="site-description">AnA 14th/sunrin SW 118th</h2>
+        </div>
+    </header><ol class="social-menu">
+            
+                <li>
+                    <a 
+                        href='https://github.com/wntjd-0612'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>Links</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>다크 모드</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">목차</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#이스케이프-시퀸스escape-sequence">이스케이프 시퀸스(escape sequence)</a></li>
+    <li><a href="#문자열-연산">문자열 연산</a></li>
+    <li><a href="#문자열-포매팅">문자열 포매팅</a>
+      <ol>
+        <li><a href="#format-함수를-사용한-포매팅">format 함수를 사용한 포매팅</a></li>
+        <li><a href="#f를-이용한-포매팅">f를 이용한 포매팅</a></li>
+      </ol>
+    </li>
+    <li><a href="#문자열-함수">문자열 함수</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header" onclick="location.href='\/p\/simple_python4\/'" style="cursor: pointer;" >
+        <div class="article-image">
+            <a href="/p/simple_python4/">
+                <img src="/p/simple_python4/thumb_hu6ce46be598242d68941202901d39eb59_93419_800x0_resize_box_3.png"
+                        srcset="/p/simple_python4/thumb_hu6ce46be598242d68941202901d39eb59_93419_800x0_resize_box_3.png 800w, /p/simple_python4/thumb_hu6ce46be598242d68941202901d39eb59_93419_1600x0_resize_box_3.png 1600w"
+                        width="800" 
+                        height="206" 
+                        loading="lazy"
+                        alt="Featured image of post python 기초문법4" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/python/" >
+                Python
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/simple_python4/">python 기초문법4</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            python 기초문법-자료형
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Apr 55, 20250</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    2 분 정도
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+
+    <section class="article-content">
+    
+    
+    <h1 id="문자열">문자열</h1>
+<p><a class="link" href="https://blog.wntjd.kr/p/simple_python2/"  target="_blank" rel="noopener"
+    >지난 시간</a>에 배웠던 내용인 문자열에 대해서 자세히 알아보자</p>
+<h1 id="문자열-자료형">문자열 자료형</h1>
+<h2 id="이스케이프-시퀸스escape-sequence">이스케이프 시퀸스(escape sequence)</h2>
+<ul>
+<li>
+<p>문자열에서 표현하기 어려운 특정 문자를 백 슬레시()로 표현하는 것</p>
+</li>
+<li>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>이스케이프 시퀸스</th>
+<th>의미</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>\n</td>
+<td>개행(엔터)</td>
+</tr>
+<tr>
+<td>\b</td>
+<td>백스페이스(글자 하나를 지움)</td>
+</tr>
+<tr>
+<td>\t</td>
+<td>탭</td>
+</tr>
+<tr>
+<td>\'</td>
+<td>작은 따옴표</td>
+</tr>
+<tr>
+<td>\&quot;</td>
+<td>큰 따옴표</td>
+</tr>
+<tr>
+<td>\\</td>
+<td>백 슬레시 문자</td>
+</tr>
+</tbody>
+</table></div>
+</li>
+</ul>
+<h2 id="문자열-연산">문자열 연산</h2>
+<ul>
+<li>문자열 연산하기 (Concatenation)
+<ul>
+<li>덧셈부호(+)를 이용하여 문자열 연결 연산 수행 가능</li>
+</ul>
+</li>
+<li>문자열 반복하기
+<ul>
+<li>곱셈 부호(*)를 이용하여 문자열을 반복하는 연산 수행 가능</li>
+<li><code>문자열 * 정수</code> <code>정수 * 문자열</code>의 형태로 사용</li>
+</ul>
+</li>
+</ul>
+<h2 id="문자열-포매팅">문자열 포매팅</h2>
+<ul>
+<li>포매팅(Formatting) : 사용자가 문자열의 <code>포맷을 지정하는 것</code></li>
+<li>문자열에 포함된 값이 계속해서 변경될 경우, 변수와 포매팅을 이용하여 가독성을 높일 수 있다.</li>
+<li>문자열 안에 포맷 코드를 입력한 뒤, 가장 뒤에 <code>%</code>와 함께 대응하는 값을 써준다.</li>
+</ul>
+<ul>
+<li><code>포맷 코드에 대응하는 값이 올바르게 연결되어야 하며, 포맷 코드와 대응되는 개수가 같아야 함 </code></li>
+</ul>
+<ul>
+<li>문자열 포맷 코드</li>
+<li>| 코드  | 설명                 |
+|&mdash;&ndash;|&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;|
+| %s  | 문자열(stirng)        |
+| %c  | 문자 1개 (character)  |
+| %d  | 정수(integer)        |
+| %f  | 실수(floating-point) |
+| %%  | %자체를 출력            |</li>
+</ul>
+<h3 id="format-함수를-사용한-포매팅">format 함수를 사용한 포매팅</h3>
+<ul>
+<li>문자열 내에 {name1},{name2}, ..와 같은 형태로 이름을 붙여 사용하고, format 함수에 이름에 해당하는 입력값을 넣어주면 대응하는 값으로 바뀌어 출력한다</li>
+</ul>
+<h3 id="f를-이용한-포매팅">f를 이용한 포매팅</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;</span><span class="si">{</span><span class="n">asf</span><span class="si">}</span><span class="s2">이다&#34;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="문자열-함수">문자열 함수</h2>
+<ul>
+<li>문자열 자료형이 자체적으로 가지고 있는 내장함수를 사용할 수 있다.</li>
+<li>문자열 변구 이름 뒤에 .을 붙인 다음 함수를 호출하는 방식으러 사용한다.</li>
+<li>함수의 종류
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>함수</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>count()</td>
+<td>전달인자와 같은 문자의 개수를 반환</td>
+</tr>
+<tr>
+<td>find()</td>
+<td>전달인자를 찾아 인덱스 값을 반환, 없다면 -1반환</td>
+</tr>
+<tr>
+<td>index()</td>
+<td>전달인자를 찾아 인덱스 값을 반환, 없다면 오류 반환</td>
+</tr>
+<tr>
+<td>join()</td>
+<td>전달인자 사이에 문자열을 삽입</td>
+</tr>
+<tr>
+<td>upper()</td>
+<td>소문자를 대문자로 바꾸기</td>
+</tr>
+<tr>
+<td>lower()</td>
+<td>대문자를 소문자로 바꾸기</td>
+</tr>
+<tr>
+<td>lstrip()</td>
+<td>가장 왼쪽에 있는 공백 모두 지우기</td>
+</tr>
+<tr>
+<td>rstrip()</td>
+<td>가장 오른쪽에 있는 공백 모두 지우기</td>
+</tr>
+<tr>
+<td>replace()</td>
+<td>문자열 안의 특정한 값을 다른 값으로 치환</td>
+</tr>
+<tr>
+<td>split()</td>
+<td>전달인자 기준으로 문자열을 나눠 리스트로 반환</td>
+</tr>
+<tr>
+<td>odd()</td>
+<td>문자에 대응하는 아스키코드 값을 반환</td>
+</tr>
+<tr>
+<td>chr()</td>
+<td>아스키코드 값에 대응하는 문자를 반환</td>
+</tr>
+</tbody>
+</table></div>
+</li>
+</ul>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/basic/">Basic</a>
+        
+            <a href="/tags/ana/">Ana</a>
+        
+            <a href="/tags/python/">Python</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    <section class="article-lastmod">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <span>
+            마지막 수정:  Apr 55, 20250 56:27 UTC
+        </span>
+    </section></footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">관련 글</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/simple_python5/">
+        
+        
+            <div class="article-image">
+                <img src="/p/simple_python5/thumb.3b0892711d7711382d9e42bf4e1860d1_hu6ce46be598242d68941202901d39eb59_93419_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post python 기초문법5"
+                        data-key="simple_python5" 
+                        data-hash="md5-OwiScR13ETgtnkK/Thhg0Q==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">python 기초문법5</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/simple_python3/">
+        
+        
+            <div class="article-image">
+                <img src="/p/simple_python3/thumb.3b0892711d7711382d9e42bf4e1860d1_hu6ce46be598242d68941202901d39eb59_93419_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post python 기초문법3"
+                        data-key="simple_python3" 
+                        data-hash="md5-OwiScR13ETgtnkK/Thhg0Q==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">python 기초문법3</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/simple_python2/">
+        
+        
+            <div class="article-image">
+                <img src="/p/simple_python2/thumb.3b0892711d7711382d9e42bf4e1860d1_hu6ce46be598242d68941202901d39eb59_93419_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post python 기초문법2"
+                        data-key="simple_python2" 
+                        data-hash="md5-OwiScR13ETgtnkK/Thhg0Q==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">python 기초문법2</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/simple_python1/">
+        
+        
+            <div class="article-image">
+                <img src="/p/simple_python1/thumb.3b0892711d7711382d9e42bf4e1860d1_hu6ce46be598242d68941202901d39eb59_93419_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post python 기초문법1"
+                        data-key="simple_python1" 
+                        data-hash="md5-OwiScR13ETgtnkK/Thhg0Q==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">python 기초문법1</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/about_python/">
+        
+        
+            <div class="article-image">
+                <img src="/p/about_python/thumb.3b0892711d7711382d9e42bf4e1860d1_hu6ce46be598242d68941202901d39eb59_93419_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post python이란?"
+                        data-key="about_python" 
+                        data-hash="md5-OwiScR13ETgtnkK/Thhg0Q==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">python이란?</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <script
+    src="https://giscus.app/client.js"
+    data-repo="wntjd-0612/blog"
+    data-repo-id="R_kgDOLst0yQ"
+    data-category="General"
+    data-category-id="DIC_kwDOLst0yc4CenqH"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="light"
+    data-lang="en"
+    crossorigin="anonymous"
+    async
+></script>
+<script>
+    function setGiscusTheme(theme) {
+        let giscus = document.querySelector("iframe.giscus-frame");
+        if (giscus) {
+            giscus.contentWindow.postMessage(
+                {
+                    giscus: {
+                        setConfig: {
+                            theme: theme,
+                        },
+                    },
+                },
+                "https://giscus.app"
+            );
+        }
+    }
+
+    (function () {
+        addEventListener("message", (e) => {
+            if (event.origin !== "https://giscus.app") return;
+            handler();
+        });
+        window.addEventListener("onColorSchemeChange", handler);
+
+        function handler() {
+            if (document.documentElement.dataset.scheme === "light") {
+                setGiscusTheme('light');
+            } else {
+                setGiscusTheme('dark_dimmed');
+            }
+        }
+    })();
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2024 wntjd
+    </section>
+    
+    <section class="powerby">
+        <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a>로 만듦 <br />
+        <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>의 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.24.1">Stack</a></b> 테마 사용 중
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

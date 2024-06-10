@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on wntjd</title>
+    <link>https://blog.wntjd.kr/tags/</link>
+    <description>Recent content in Tags on wntjd</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 09 Jun 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blog.wntjd.kr/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2</title>
+      <link>https://blog.wntjd.kr/tags/2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blog.wntjd.kr/tags/2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cs</title>
+      <link>https://blog.wntjd.kr/tags/cs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blog.wntjd.kr/tags/cs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>https://blog.wntjd.kr/tags/python/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blog.wntjd.kr/tags/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ana</title>
+      <link>https://blog.wntjd.kr/tags/ana/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blog.wntjd.kr/tags/ana/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Basic</title>
+      <link>https://blog.wntjd.kr/tags/basic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blog.wntjd.kr/tags/basic/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Baekjoon</title>
+      <link>https://blog.wntjd.kr/tags/baekjoon/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blog.wntjd.kr/tags/baekjoon/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Install</title>
+      <link>https://blog.wntjd.kr/tags/install/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blog.wntjd.kr/tags/install/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

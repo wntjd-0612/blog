@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cs on wntjd</title>
+    <link>https://blog.wntjd.kr/tags/cs/</link>
+    <description>Recent content in Cs on wntjd</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 09 Jun 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blog.wntjd.kr/tags/cs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>싱글톤 패턴</title>
+      <link>https://blog.wntjd.kr/p/cs1/</link>
+      <pubDate>Sun, 09 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>https://blog.wntjd.kr/p/cs1/</guid>
+      <description>디자인 패턴 디자인 패턴이란? 프로그램을 설계할 때 발생했던 문제점들을 객체 간에 상호 관계등을 이용하여 하나의 규약처럼 만들어 놓은 것을 의미합니다. 싱글톤 패턴 싱글톤 패톤은 하나의 클래스의 오직 하나의 인스턴트만 가지는 패턴입니다 보통 데이터베이스연결 모듈에 자주 사용합니다. 하나의 인스턴트를 만들어 놓고 해당 인스턴트를 다른 모듈들이 공유하며 사용하기 때문에 인스턴트를 생성할 때 드는 비용이 줄어드는 장점이 있습니다 의존성이 높아진다는 단점이 있습니다. python의 싱글톤 패턴 1 2 3 4 5 6 7 obj1 = {&amp;#34;a&amp;#34;: 27} obj2 = {&amp;#34;a&amp;#34;: 27} print(obj1 is obj2) # False print(obj1 == obj2) # True 앞의 코드에서 볼 수 있듯이 obj1과 obj2는 다른 인스턴스를 가집니다.</description>
+    </item>
+  </channel>
+</rss>
