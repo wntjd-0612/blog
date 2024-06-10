@@ -1,0 +1,20 @@
+# 블로그 url
+url="https://blog.wntjd/p/{starix.id}/"
+# 블로그 섬네일 url
+thumb="https://blog.wntjd.kr/p/{starix.id}/thumb.jpg"
+# 웹훅 이름
+name="jsta blog"
+# 웹훅 프로필
+avatar="https://avatars.githubusercontent.com/u/129721844?v=4"
+
+[post]
+# 포스트시 메세지
+content="=<@&1219805864118980619> `{starix.id}`가 올라왔어요!"
+# 포스트시 메세지
+color="#2E7EFF"
+
+[fix]
+# 수정시 메세지
+content="FIX"
+# 수정시 메세지
+color="#FF782E"
