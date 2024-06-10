@@ -1,6 +1,6 @@
 ---
-title: 디자인 패턴
-description: CS-DesignPattern
+title: 싱글톤 패턴
+description: 싱글톤 패턴을 알아보자
 slug: cs1
 date: 2024-06-09 00:00:00+0000
 image: thumb.png
